@@ -287,6 +287,13 @@ const i18n = {
     contact: {
       title: "Potrzebujesz partnera od bezpieczeństwa?",
       desc: "Skontaktuj się z Fifth Ace i zaplanujmy bezpieczniejszą infrastrukturę.",
+      emailPrompt: "Wolisz maila? Napisz bezpośrednio:",
+    },
+    resources: {
+      title: "Zasoby",
+      item1Title: "Lista kontrolna zgodności z NIS2 dla firm z UK",
+      item1Desc:
+        "Praktyczny przewodnik po wymaganiach Artykułu 21 dyrektywy NIS2 dla firm zatrudniających 10–100 pracowników.",
     },
     footer: {
       follow: "Obserwuj nas",
@@ -569,6 +576,13 @@ const i18n = {
     contact: {
       title: "Need a trusted security partner?",
       desc: "Contact Fifth Ace and let's plan a safer infrastructure.",
+      emailPrompt: "Prefer email? Write directly:",
+    },
+    resources: {
+      title: "Resources",
+      item1Title: "NIS2 Compliance Checklist for UK SMEs",
+      item1Desc:
+        "A practical guide to NIS2 Article 21 requirements for businesses with 10-100 employees.",
     },
     footer: {
       follow: "Follow us",
