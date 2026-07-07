@@ -22,7 +22,6 @@ const i18n = {
     nav: {
       services: "Usługi",
       guides: "Strefa usług",
-      experience: "Doświadczenie",
       reviews: "Opinie",
       pricing: "Cennik",
       contact: "Kontakt",
@@ -123,25 +122,6 @@ const i18n = {
         title: "Zabezpieczenie laptopa i sieci Wi-Fi",
         desc: "Hardening Windows, router, MFA, Defender i szybki security check dla małego biznesu lub domu.",
         cta: "Przejdź do strony",
-      },
-    },
-    experience: {
-      title: "Doświadczenie i kwalifikacje",
-      card2: {
-        title: "Praktyka Fifth Ace",
-        desc: "Realne wsparcie techniczne i bezpieczeństwo dla środowisk domowych i małych firm.",
-        li1: "Diagnostyka i naprawa Windows, macOS oraz drukarek",
-        li2: "Modernizacje sprzętu: RAM, SSD, serwis urządzeń",
-        li3: "Konfiguracja sieci i podstawowych ustawień zapory sieciowej",
-      },
-      card4: {
-        title: "Specjalizacje i narzędzia",
-        desc: "Testy penetracyjne, audyty i wsparcie techniczne realizowane z użyciem sprawdzonych narzędzi i metodyk.",
-        li1: "Testy penetracyjne sieci i aplikacji webowych",
-        li2: "Ocena podatności i analiza ryzyka (OWASP, NIST)",
-        li3: "Narzędzia: Nmap, Burp Suite, Metasploit, Wireshark, Kali Linux",
-        li4: "Audyt konfiguracji: Windows, Linux, sieci lokalne",
-        li5: "CompTIA A+ certified",
       },
     },
     reviews: {
@@ -312,7 +292,6 @@ const i18n = {
     nav: {
       services: "Services",
       guides: "Service pages",
-      experience: "Experience",
       reviews: "Reviews",
       pricing: "Pricing",
       contact: "Contact",
@@ -413,25 +392,6 @@ const i18n = {
         title: "Laptop and Wi-Fi security hardening",
         desc: "Windows hardening, router review, MFA, Defender, and a fast security check for home or small business environments.",
         cta: "Open page",
-      },
-    },
-    experience: {
-      title: "Experience and qualifications",
-      card2: {
-        title: "Fifth Ace practice",
-        desc: "Hands-on technical support and security services for home and small business environments.",
-        li1: "Diagnostics and repair for Windows, macOS, and printers",
-        li2: "Hardware upgrades: RAM, SSD, and device servicing",
-        li3: "Network setup and basic firewall configuration",
-      },
-      card4: {
-        title: "Specialisations and tools",
-        desc: "Penetration testing, audits, and technical support delivered using proven tools and methodologies.",
-        li1: "Network and web application penetration testing",
-        li2: "Vulnerability assessment and risk analysis (OWASP, NIST)",
-        li3: "Tools: Nmap, Burp Suite, Metasploit, Wireshark, Kali Linux",
-        li4: "Configuration audit: Windows, Linux, local networks",
-        li5: "CompTIA A+ certified",
       },
     },
     reviews: {
