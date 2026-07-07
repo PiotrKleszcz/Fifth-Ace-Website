@@ -387,40 +387,12 @@ h1 {
   color: var(--text);
 }
 
-.experience-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-}
-
 .card {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 24px 20px;
   background: linear-gradient(145deg, rgba(16, 27, 45, 0.9), rgba(9, 16, 29, 0.9));
   box-shadow: var(--shadow);
-}
-
-.exp-card {
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 22px 20px;
-  background: linear-gradient(145deg, rgba(16, 27, 45, 0.82), rgba(9, 16, 29, 0.86));
-  box-shadow: var(--shadow);
-}
-
-.exp-card h3 {
-  margin: 0 0 12px;
-}
-
-.exp-card p {
-  margin: 0 0 12px;
-  color: var(--muted);
-}
-
-.exp-card ul {
-  margin: 0;
-  padding-left: 18px;
 }
 
 .card h3 {
@@ -1412,7 +1384,6 @@ html[data-theme="light"] .topbar {
 }
 
 html[data-theme="light"] .card,
-html[data-theme="light"] .exp-card,
 html[data-theme="light"] .faq-item,
 html[data-theme="light"] .for-whom-card {
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(235, 243, 255, 0.90));
@@ -1550,7 +1521,6 @@ body,
 @media (max-width: 960px) {
   .cards,
   .steps,
-  .experience-grid,
   .faq-grid,
   .seo-cards,
   .service-steps,
@@ -1583,7 +1553,6 @@ body,
 
   .cards,
   .steps,
-  .experience-grid,
   .faq-grid,
   .seo-cards,
   .service-steps,
