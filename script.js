@@ -274,6 +274,9 @@ const i18n = {
       item1Title: "Lista kontrolna zgodności z NIS2 dla firm z UK",
       item1Desc:
         "Praktyczny przewodnik po wymaganiach Artykułu 21 dyrektywy NIS2 dla firm zatrudniających 10–100 pracowników.",
+      item2Title: "What is a Penetration Test? A Guide for UK SMEs",
+      item2Desc:
+        "Plain-English explanation of what a pentest involves, how much it costs, and when you need one.",
     },
     footer: {
       follow: "Obserwuj nas",
@@ -543,6 +546,9 @@ const i18n = {
       item1Title: "NIS2 Compliance Checklist for UK SMEs",
       item1Desc:
         "A practical guide to NIS2 Article 21 requirements for businesses with 10-100 employees.",
+      item2Title: "What is a Penetration Test? A Guide for UK SMEs",
+      item2Desc:
+        "Plain-English explanation of what a pentest involves, how much it costs, and when you need one.",
     },
     footer: {
       follow: "Follow us",

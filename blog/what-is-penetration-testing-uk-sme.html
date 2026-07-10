@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What is a Penetration Test? A Guide for UK SMEs | Fifth Ace</title>
+  <meta name="description" content="A plain-English guide to penetration testing for UK small businesses. Learn what a pentest actually involves, how much it costs, and when you need one.">
+  <meta name="keywords" content="penetration testing UK SME, pentest small business UK, what is penetration testing, cybersecurity audit UK, NIS2 penetration testing">
+  <link rel="canonical" href="https://fifthace.net/blog/what-is-penetration-testing-uk-sme.html">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a1a; background: #fff; line-height: 1.7; }
+    .nav { padding: 1rem 2rem; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+    .nav a { text-decoration: none; color: #1a1a1a; font-weight: 600; }
+    .nav .cta { background: #0F6E56; color: white; padding: 0.5rem 1.2rem; border-radius: 6px; font-size: 14px; }
+    .hero { max-width: 760px; margin: 3rem auto; padding: 0 1.5rem; }
+    .tag { display: inline-block; background: #E1F5EE; color: #0F6E56; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.5px; }
+    h1 { font-size: 2rem; font-weight: 700; line-height: 1.3; margin-bottom: 1rem; }
+    .meta { color: #666; font-size: 14px; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #eee; }
+    .meta span { margin-right: 1.5rem; }
+    .content { max-width: 760px; margin: 0 auto; padding: 0 1.5rem 4rem; }
+    .content h2 { font-size: 1.4rem; font-weight: 700; margin: 2.5rem 0 1rem; }
+    .content h3 { font-size: 1.1rem; font-weight: 600; margin: 2rem 0 0.75rem; color: #0F6E56; }
+    .content p { margin-bottom: 1.2rem; color: #333; }
+    .content ul { margin: 0.75rem 0 1.2rem 1.5rem; }
+    .content ul li { margin-bottom: 0.5rem; color: #333; }
+    .highlight { background: #f8fffe; border: 1px solid #c8ede4; border-radius: 10px; padding: 1.5rem 2rem; margin: 2rem 0; }
+    .highlight h3 { color: #0F6E56; margin-top: 0; }
+    .warning { background: #fff8e1; border-left: 4px solid #f59e0b; padding: 1rem 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0; }
+    .warning strong { color: #92400e; }
+    .cta-box { background: #0F6E56; color: white; border-radius: 12px; padding: 2.5rem; margin: 3rem 0; text-align: center; }
+    .cta-box h2 { color: white; margin-top: 0; font-size: 1.5rem; }
+    .cta-box p { color: rgba(255,255,255,0.85); margin-bottom: 1.5rem; }
+    .cta-box a { display: inline-block; background: white; color: #0F6E56; font-weight: 700; padding: 0.85rem 2rem; border-radius: 8px; text-decoration: none; font-size: 1rem; }
+    .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th { background: #0F6E56; color: white; padding: 0.75rem 1rem; text-align: left; }
+    td { padding: 0.75rem 1rem; border-bottom: 1px solid #eee; }
+    tr:nth-child(even) { background: #f9f9f9; }
+    .footer { background: #1a1a1a; color: #999; padding: 2rem; text-align: center; font-size: 14px; }
+    .footer a { color: #0F6E56; text-decoration: none; }
+    .faq-item { border-bottom: 1px solid #eee; padding: 1.25rem 0; }
+    .faq-item h3 { margin: 0 0 0.5rem; color: #1a1a1a; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="https://fifthace.net">Fifth Ace</a>
+  <a href="https://fifthace.net/#kontakt" class="cta">Get a Pentest Quote →</a>
+</nav>
+
+<article>
+  <div class="hero">
+    <span class="tag">Penetration Testing</span>
+    <h1>What is a Penetration Test? A Plain-English Guide for UK SMEs</h1>
+    <div class="meta">
+      <span>By Piotr Kleszcz, Fifth Ace</span>
+      <span>8 min read</span>
+      <span>Updated July 2025</span>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <p>You've heard you should get a penetration test. Maybe a client asked for one. Maybe your insurer mentioned it. Maybe you read something about NIS2 and vulnerability management.</p>
+
+    <p>But what does a penetration test actually involve? How long does it take? How much does it cost? And do you actually need one?</p>
+
+    <p>This guide answers all of those questions in plain English — no jargon, no sales pitch.</p>
+
+    <h2>What is a Penetration Test?</h2>
+
+    <p>A penetration test (or "pentest") is a controlled, authorised attempt to hack into your systems — carried out by a security professional before a real attacker gets the chance to do it for free.</p>
+
+    <p>The goal is simple: find the weaknesses in your network, applications, or infrastructure before someone with bad intentions does. Then fix them.</p>
+
+    <p>Think of it like hiring a locksmith to try to break into your house — not to rob you, but to tell you which locks need replacing.</p>
+
+    <div class="highlight">
+      <h3>Penetration Test vs Vulnerability Scan — What's the Difference?</h3>
+      <p>A <strong>vulnerability scan</strong> is automated. Software checks your systems against a database of known weaknesses and produces a list. Fast, cheap, but surface-level.</p>
+      <p>A <strong>penetration test</strong> is manual. A human tester actively tries to exploit vulnerabilities — chaining them together the way a real attacker would. It finds what automated tools miss.</p>
+    </div>
+
+    <h2>What Does a Penetration Test Actually Involve?</h2>
+
+    <p>A typical pentest for a small or medium business follows four phases:</p>
+
+    <h3>Phase 1 — Reconnaissance</h3>
+    <p>The tester maps your external attack surface: domains, IP addresses, open ports, public-facing services. This is what an attacker sees before they even try to get in.</p>
+
+    <h3>Phase 2 — Scanning & Enumeration</h3>
+    <p>Tools like Nmap identify running services, software versions, and potential entry points. The tester builds a picture of your infrastructure — looking for anything outdated, misconfigured, or exposed.</p>
+
+    <h3>Phase 3 — Exploitation</h3>
+    <p>This is the actual "hacking" phase. The tester attempts to exploit vulnerabilities to gain unauthorised access — escalate privileges, move laterally through the network, or access sensitive data. Everything is documented in real time.</p>
+
+    <h3>Phase 4 — Reporting</h3>
+    <p>You receive two deliverables: an executive summary (for management) and a technical report (for your IT team). Every finding is rated by severity, explained in plain language, and accompanied by a recommended fix.</p>
+
+    <h2>Types of Penetration Tests</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Type</th><th>What it tests</th><th>Best for</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Network Pentest</td><td>Internal and external network infrastructure</td><td>Most SMEs — good starting point</td></tr>
+          <tr><td>Web Application Pentest</td><td>Websites, web apps, APIs</td><td>eCommerce, SaaS, customer portals</td></tr>
+          <tr><td>Wireless Pentest</td><td>WiFi networks and access points</td><td>Offices with guest WiFi or BYOD</td></tr>
+          <tr><td>Social Engineering</td><td>Phishing, pretexting, staff awareness</td><td>Businesses with non-technical staff</td></tr>
+          <tr><td>Physical Pentest</td><td>Physical access controls</td><td>Data centres, server rooms</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>How Much Does a Penetration Test Cost in the UK?</h2>
+
+    <p>Costs vary significantly depending on scope and provider:</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Scope</th><th>Typical Cost (UK)</th><th>Duration</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Small network (up to 20 hosts)</td><td>£800 – £2,000</td><td>1–2 days</td></tr>
+          <tr><td>Medium network (20–100 hosts)</td><td>£2,000 – £5,000</td><td>3–5 days</td></tr>
+          <tr><td>Web application (single app)</td><td>£1,500 – £4,000</td><td>2–4 days</td></tr>
+          <tr><td>Full infrastructure (network + web)</td><td>£4,000 – £10,000</td><td>5–10 days</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="warning">
+      <strong>Watch out for:</strong> Very cheap "automated pentests" sold as manual assessments. If it costs under £500 and takes less than a day, it's almost certainly a vulnerability scan with a different label on it.
+    </div>
+
+    <h2>Do You Actually Need a Penetration Test?</h2>
+
+    <p>You likely need one if any of the following apply:</p>
+
+    <ul>
+      <li>A client, partner, or insurer has asked for evidence of security testing</li>
+      <li>You process sensitive customer data (financial, medical, personal)</li>
+      <li>You operate in a regulated sector (finance, healthcare, legal)</li>
+      <li>You're pursuing NIS2 compliance — Article 21 requires vulnerability handling and testing</li>
+      <li>You've never had one and your business has been operating for more than a year</li>
+      <li>You've recently made significant changes to your infrastructure</li>
+    </ul>
+
+    <h2>Penetration Testing and NIS2</h2>
+
+    <p>NIS2 Article 21 requires organisations to implement "vulnerability handling and disclosure" as part of their security measures. While the directive doesn't mandate annual pentests by name, regulators and auditors increasingly expect them as evidence of a mature security programme.</p>
+
+    <p>For UK businesses supplying EU entities, a documented penetration test — with remediation evidence — is often requested as part of supplier due diligence.</p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>Will a pentest take my systems offline?</h3>
+      <p>A professionally conducted pentest should not cause downtime. Your tester will agree a scope and rules of engagement in advance, including which systems are in scope and what actions are permitted.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How often should I get a penetration test?</h3>
+      <p>Most SMEs should aim for an annual test, with additional tests after major infrastructure changes, new application deployments, or security incidents.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What's the difference between black box, grey box, and white box testing?</h3>
+      <p><strong>Black box</strong> — tester has no prior knowledge of your systems (simulates an external attacker). <strong>Grey box</strong> — tester has partial knowledge (simulates a compromised account or insider threat). <strong>White box</strong> — tester has full access to documentation, source code, and credentials (most thorough, best value for money).</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Do I need to fix everything in the report?</h3>
+      <p>Not necessarily — findings are rated by severity (Critical, High, Medium, Low). Critical and High findings should be remediated immediately. Medium and Low findings can be scheduled and risk-accepted where appropriate.</p>
+    </div>
+
+    <div class="cta-box">
+      <h2>Ready to find out what attackers would find?</h2>
+      <p>Fifth Ace delivers penetration testing and NIS2 compliance audits for UK businesses with 10 to 100 employees. Fixed price. Plain-English reports. No corporate overhead.</p>
+      <a href="https://fifthace.net/#kontakt">Get a Quote → </a>
+    </div>
+
+  </div>
+</article>
+
+<footer class="footer">
+  <p>© 2025 Fifth Ace Cybersecurity Ltd · <a href="https://fifthace.net">fifthace.net</a> · <a href="mailto:hello@fifthace.net">hello@fifthace.net</a></p>
+</footer>
+
+</body>
+</html>
