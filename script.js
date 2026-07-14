@@ -277,6 +277,8 @@ const i18n = {
       item2Title: "What is a Penetration Test? A Guide for UK SMEs",
       item2Desc:
         "Plain-English explanation of what a pentest involves, how much it costs, and when you need one.",
+      item3Title: "NIS2 Readiness Checklist",
+      item3Desc: "Darmowa 5-minutowa samoocena dla MŚP. Pobierz PDF →",
     },
     footer: {
       follow: "Obserwuj nas",
@@ -549,6 +551,8 @@ const i18n = {
       item2Title: "What is a Penetration Test? A Guide for UK SMEs",
       item2Desc:
         "Plain-English explanation of what a pentest involves, how much it costs, and when you need one.",
+      item3Title: "NIS2 Readiness Checklist",
+      item3Desc: "Free 5-minute self-assessment for UK SMEs. Get the PDF →",
     },
     footer: {
       follow: "Follow us",
