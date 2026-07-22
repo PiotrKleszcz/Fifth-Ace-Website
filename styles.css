@@ -1218,20 +1218,6 @@ h1 {
   box-shadow: 0 0 50px rgba(0, 216, 255, 0.14), var(--shadow);
 }
 
-.pricing-badge {
-  display: inline-block;
-  margin-bottom: 18px;
-  padding: 5px 14px;
-  border-radius: 999px;
-  font-size: 0.74rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #030710;
-  background: linear-gradient(135deg, var(--cyan), var(--pink));
-  align-self: flex-start;
-}
-
 .pricing-name {
   margin: 0 0 8px;
   font-family: "Orbitron", sans-serif;
@@ -1292,11 +1278,6 @@ h1 {
   font-weight: 700;
   flex-shrink: 0;
   margin-top: 1px;
-}
-
-.pricing-note {
-  margin-top: 18px;
-  font-size: 0.92rem;
 }
 
 /* ===== Lead Magnet ===== */

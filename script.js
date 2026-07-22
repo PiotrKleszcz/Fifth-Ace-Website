@@ -239,7 +239,6 @@ const i18n = {
         cta: "Zamów teraz",
       },
       card2: {
-        badge: "Najpopularniejszy",
         name: "NIS2 Business Audit",
         desc: "Dla firm 10–100 osób. Kompleksowy audyt zgodności z NIS2 i priorytetowy plan działania.",
         period: "jednorazowo",
@@ -262,7 +261,6 @@ const i18n = {
         li5: "Aktualizacje polityk bezpieczeństwa",
         cta: "Zacznij współpracę",
       },
-      note: "Wszystkie ceny netto. Faktura VAT na życzenie. Możliwość płatności w PLN lub EUR wg kursu bieżącego.",
     },
     contact: {
       title: "Potrzebujesz partnera od bezpieczeństwa?",
@@ -513,7 +511,6 @@ const i18n = {
         cta: "Order now",
       },
       card2: {
-        badge: "Most popular",
         name: "NIS2 Business Audit",
         desc: "For businesses with 10–100 employees. Full NIS2 compliance audit and priority action plan.",
         period: "one-off",
@@ -536,7 +533,6 @@ const i18n = {
         li5: "Security policy updates",
         cta: "Start collaboration",
       },
-      note: "All prices exclusive of VAT. Invoice available on request.",
     },
     contact: {
       title: "Need a trusted security partner?",
