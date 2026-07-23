@@ -275,8 +275,11 @@ const i18n = {
       item2Title: "What is a Penetration Test? A Guide for UK SMEs",
       item2Desc:
         "Plain-English explanation of what a pentest involves, how much it costs, and when you need one.",
-      item3Title: "NIS2 Readiness Checklist",
-      item3Desc: "Darmowa 5-minutowa samoocena dla MŚP. Pobierz PDF →",
+      item3Title: "Jak wykryć ransomware, zanim będzie za późno",
+      item3Desc:
+        "Dwa sygnały, które wykrywają atak ransomware wcześnie, oraz wyniki naszego laboratorium testowego.",
+      item4Title: "NIS2 Readiness Checklist",
+      item4Desc: "Darmowa 5-minutowa samoocena dla MŚP. Pobierz PDF →",
     },
     footer: {
       follow: "Obserwuj nas",
@@ -547,8 +550,11 @@ const i18n = {
       item2Title: "What is a Penetration Test? A Guide for UK SMEs",
       item2Desc:
         "Plain-English explanation of what a pentest involves, how much it costs, and when you need one.",
-      item3Title: "NIS2 Readiness Checklist",
-      item3Desc: "Free 5-minute self-assessment for UK SMEs. Get the PDF →",
+      item3Title: "How to Detect Ransomware Before It's Too Late",
+      item3Desc:
+        "The two signals that catch a ransomware attack early, and what our detection lab found when we tested them.",
+      item4Title: "NIS2 Readiness Checklist",
+      item4Desc: "Free 5-minute self-assessment for UK SMEs. Get the PDF →",
     },
     footer: {
       follow: "Follow us",

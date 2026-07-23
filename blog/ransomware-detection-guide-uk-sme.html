@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Detect Ransomware Before It's Too Late | Fifth Ace</title>
+  <meta name="description" content="A practical guide to early ransomware detection for UK SMEs: the two signals that catch an attack in progress, what our detection lab found, and why it matters for NIS2.">
+  <meta name="keywords" content="ransomware detection UK, ransomware detection SME, early ransomware detection, ransomware NIS2, ransomware incident response UK">
+  <link rel="canonical" href="https://fifthace.net/blog/ransomware-detection-guide-uk-sme.html">
+  <link rel="alternate" hreflang="pl" href="https://fifthace.net/blog/jak-wykryc-ransomware-poradnik-mmp-uk.html" />
+  <link rel="alternate" hreflang="en" href="https://fifthace.net/blog/ransomware-detection-guide-uk-sme.html" />
+  <link rel="alternate" hreflang="x-default" href="https://fifthace.net/blog/ransomware-detection-guide-uk-sme.html" />
+  <link rel="icon" href="../logo.jpeg" type="image/jpeg">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How to Detect Ransomware Before It's Too Late | Fifth Ace">
+  <meta property="og:description" content="A practical guide to early ransomware detection for UK SMEs: the two signals that catch an attack in progress, what our detection lab found, and why it matters for NIS2.">
+  <meta property="og:url" content="https://fifthace.net/blog/ransomware-detection-guide-uk-sme.html">
+  <meta property="og:image" content="https://fifthace.net/logo.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Detect Ransomware Before It's Too Late | Fifth Ace">
+  <meta name="twitter:description" content="A practical guide to early ransomware detection for UK SMEs: the two signals that catch an attack in progress, what our detection lab found, and why it matters for NIS2.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a1a; background: #fff; line-height: 1.7; }
+    .nav { padding: 1rem 2rem; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+    .nav a { text-decoration: none; color: #1a1a1a; font-weight: 600; }
+    .nav .cta { background: #0F6E56; color: white; padding: 0.5rem 1.2rem; border-radius: 6px; font-size: 14px; }
+    .hero { max-width: 760px; margin: 3rem auto; padding: 0 1.5rem; }
+    .tag { display: inline-block; background: #E1F5EE; color: #0F6E56; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.5px; }
+    h1 { font-size: 2rem; font-weight: 700; line-height: 1.3; margin-bottom: 1rem; }
+    .meta { color: #666; font-size: 14px; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #eee; }
+    .meta span { margin-right: 1.5rem; }
+    .content { max-width: 760px; margin: 0 auto; padding: 0 1.5rem 4rem; }
+    .content h2 { font-size: 1.4rem; font-weight: 700; margin: 2.5rem 0 1rem; }
+    .content h3 { font-size: 1.1rem; font-weight: 600; margin: 2rem 0 0.75rem; color: #0F6E56; }
+    .content p { margin-bottom: 1.2rem; color: #333; }
+    .content ul { margin: 0.75rem 0 1.2rem 1.5rem; }
+    .content ul li { margin-bottom: 0.5rem; color: #333; }
+    .warning { background: #fff8e1; border-left: 4px solid #f59e0b; padding: 1rem 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0; }
+    .warning strong { color: #92400e; }
+    .cta-box { background: #0F6E56; color: white; border-radius: 12px; padding: 2.5rem; margin: 3rem 0; text-align: center; }
+    .cta-box h2 { color: white; margin-top: 0; font-size: 1.5rem; }
+    .cta-box p { color: rgba(255,255,255,0.85); margin-bottom: 1.5rem; }
+    .cta-box a { display: inline-block; background: white; color: #0F6E56; font-weight: 700; padding: 0.85rem 2rem; border-radius: 8px; text-decoration: none; font-size: 1rem; }
+    .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th { background: #0F6E56; color: white; padding: 0.75rem 1rem; text-align: left; }
+    td { padding: 0.75rem 1rem; border-bottom: 1px solid #eee; }
+    tr:nth-child(even) { background: #f9f9f9; }
+    .footer { background: #1a1a1a; color: #999; padding: 2rem; text-align: center; font-size: 14px; }
+    .footer a { color: #0F6E56; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="https://fifthace.net">Fifth Ace</a>
+  <a href="https://fifthace.net/#kontakt" class="cta">Get NIS2 Audit →</a>
+</nav>
+
+<article>
+  <div class="hero">
+    <span class="tag">Incident Response</span>
+    <h1>How to Detect Ransomware Before It's Too Late: A Practical Guide for UK SMEs</h1>
+    <div class="meta">
+      <span>By Piotr Kleszcz, Fifth Ace</span>
+      <span>6 min read</span>
+      <span>Updated July 2026</span>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <p>By the time you see a ransom note, the damage is already done. Your files are encrypted, your backups are the only thing standing between you and a payout decision, and every hour of downtime is costing money.</p>
+
+    <p>The real question isn't "how do we recover after encryption?" It's "how do we catch it <em>while it's happening</em> — before it spreads past a handful of files?"</p>
+
+    <p>We built a detection lab to test exactly that, using the same techniques a monitoring system would rely on in a live environment.</p>
+
+    <div class="warning">
+      <strong>Important:</strong> No backup strategy replaces early detection. Backups tell you how to recover. Detection tells you <em>when to stop the bleeding</em> — often the difference between losing a folder and losing a file server.
+    </div>
+
+    <h2>Two Signals That Catch Ransomware Early</h2>
+
+    <p>Ransomware behaves in predictable ways, and two signals show up well before an attacker finishes the job:</p>
+
+    <p><strong>1. Extension changes.</strong> Ransomware renames files as it encrypts them — <code>.txt</code> becomes <code>.locked</code>, <code>.docx</code> becomes <code>.encrypted</code>, and so on. A script watching for unexpected extension changes across a file system catches this in seconds, no specialised threat intelligence required.</p>
+
+    <p><strong>2. Shannon entropy.</strong> Encrypted data looks statistically different from normal data — more "random" at a byte level. This is measured using Shannon entropy, a way of scoring how unpredictable a file's contents are. Normal text and office documents sit in a low-to-moderate range. Encrypted files spike toward the maximum. A detector that calculates entropy across files can flag encryption in progress, even on files that haven't been renamed yet.</p>
+
+    <h2>What We Found When We Tested It</h2>
+
+    <p>We simulated ransomware behaviour safely — no real encryption, just realistic file renaming — against a set of sample documents, then ran a detection script against the result.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Check</th><th>Result</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Files affected</td><td>9</td></tr>
+          <tr><td>Suspicious extensions detected</td><td>8</td></tr>
+          <tr><td>Verdict</td><td><strong>CRITICAL — Ransomware indicators detected</strong></td></tr>
+          <tr><td>Recommended response</td><td>Isolate system, preserve disk image, check backups, report incident</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>The detector flagged 8 of 9 affected files on extension changes alone — before entropy analysis was even needed. In a live environment, that's the difference between catching an incident in its first minute and finding out from a ransom note the next morning.</p>
+
+    <h2>Why This Matters for NIS2</h2>
+
+    <p>Two articles in the NIS2 directive are directly relevant here:</p>
+
+    <ul>
+      <li><strong>Article 21</strong> requires organisations to have risk management measures in place — and detection is a measure, not a policy document. Having a plan for <em>after</em> an incident doesn't satisfy the requirement if you have no way of noticing the incident is happening.</li>
+      <li><strong>Article 23</strong> requires significant incidents to be reported within 24 hours of becoming aware of them. That clock doesn't start when you decide to investigate — it starts when detection should have flagged the problem. You can't report what you never detected.</li>
+    </ul>
+
+    <h2>What This Means for Your Business</h2>
+
+    <p>Most SMEs we talk to have backups. Very few have anything actively watching for the early signs of ransomware — file renames, encryption-like entropy spikes, unusual access patterns. That gap is exactly what a structured security review is designed to close: not just "do you have backups," but "would you know within minutes if something started encrypting your files right now."</p>
+
+    <p>If the answer is no, that's a gap worth closing before it becomes an incident report.</p>
+
+    <div class="cta-box">
+      <h2>Ready to find out where you stand?</h2>
+      <p>Our NIS2 Business Audit gives you a complete picture of your compliance posture — including detection and response readiness — with a clear plan to fix what's missing. Fixed price. No surprises.</p>
+      <a href="https://fifthace.net/#kontakt">Book Your NIS2 Audit — £799 →</a>
+    </div>
+
+    <div class="cta-box">
+      <h2>Download our free NIS2 Readiness Checklist</h2>
+      <p>Not ready to book an audit yet? Take our free 5-minute self-assessment and get the PDF checklist straight to your inbox.</p>
+      <a href="https://tally.so/r/VLAo7N">Download our free NIS2 Readiness Checklist →</a>
+    </div>
+
+  </div>
+</article>
+
+<footer class="footer">
+  <p>© 2026 Fifth Ace Cybersecurity Ltd · <a href="https://fifthace.net">fifthace.net</a> · <a href="mailto:hello@fifthace.net">hello@fifthace.net</a></p>
+</footer>
+
+</body>
+</html>

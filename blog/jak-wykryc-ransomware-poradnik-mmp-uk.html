@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jak wykryć ransomware, zanim będzie za późno | Fifth Ace</title>
+  <meta name="description" content="Praktyczny przewodnik po wczesnym wykrywaniu ransomware dla brytyjskich MŚP: dwa sygnały, które wychwytują atak w trakcie, wyniki naszego laboratorium testowego i znaczenie dla NIS2.">
+  <meta name="keywords" content="wykrywanie ransomware UK, wykrywanie ransomware MŚP, wczesne wykrywanie ransomware, ransomware a NIS2, reagowanie na incydenty ransomware UK">
+  <link rel="canonical" href="https://fifthace.net/blog/jak-wykryc-ransomware-poradnik-mmp-uk.html">
+  <link rel="alternate" hreflang="pl" href="https://fifthace.net/blog/jak-wykryc-ransomware-poradnik-mmp-uk.html" />
+  <link rel="alternate" hreflang="en" href="https://fifthace.net/blog/ransomware-detection-guide-uk-sme.html" />
+  <link rel="alternate" hreflang="x-default" href="https://fifthace.net/blog/ransomware-detection-guide-uk-sme.html" />
+  <link rel="icon" href="../logo.jpeg" type="image/jpeg">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Jak wykryć ransomware, zanim będzie za późno | Fifth Ace">
+  <meta property="og:description" content="Praktyczny przewodnik po wczesnym wykrywaniu ransomware dla brytyjskich MŚP: dwa sygnały, które wychwytują atak w trakcie, wyniki naszego laboratorium testowego i znaczenie dla NIS2.">
+  <meta property="og:url" content="https://fifthace.net/blog/jak-wykryc-ransomware-poradnik-mmp-uk.html">
+  <meta property="og:image" content="https://fifthace.net/logo.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jak wykryć ransomware, zanim będzie za późno | Fifth Ace">
+  <meta name="twitter:description" content="Praktyczny przewodnik po wczesnym wykrywaniu ransomware dla brytyjskich MŚP: dwa sygnały, które wychwytują atak w trakcie, wyniki naszego laboratorium testowego i znaczenie dla NIS2.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a1a; background: #fff; line-height: 1.7; }
+    .nav { padding: 1rem 2rem; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+    .nav a { text-decoration: none; color: #1a1a1a; font-weight: 600; }
+    .nav .cta { background: #0F6E56; color: white; padding: 0.5rem 1.2rem; border-radius: 6px; font-size: 14px; }
+    .hero { max-width: 760px; margin: 3rem auto; padding: 0 1.5rem; }
+    .tag { display: inline-block; background: #E1F5EE; color: #0F6E56; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.5px; }
+    h1 { font-size: 2rem; font-weight: 700; line-height: 1.3; margin-bottom: 1rem; }
+    .meta { color: #666; font-size: 14px; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #eee; }
+    .meta span { margin-right: 1.5rem; }
+    .content { max-width: 760px; margin: 0 auto; padding: 0 1.5rem 4rem; }
+    .content h2 { font-size: 1.4rem; font-weight: 700; margin: 2.5rem 0 1rem; }
+    .content h3 { font-size: 1.1rem; font-weight: 600; margin: 2rem 0 0.75rem; color: #0F6E56; }
+    .content p { margin-bottom: 1.2rem; color: #333; }
+    .content ul { margin: 0.75rem 0 1.2rem 1.5rem; }
+    .content ul li { margin-bottom: 0.5rem; color: #333; }
+    .warning { background: #fff8e1; border-left: 4px solid #f59e0b; padding: 1rem 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0; }
+    .warning strong { color: #92400e; }
+    .cta-box { background: #0F6E56; color: white; border-radius: 12px; padding: 2.5rem; margin: 3rem 0; text-align: center; }
+    .cta-box h2 { color: white; margin-top: 0; font-size: 1.5rem; }
+    .cta-box p { color: rgba(255,255,255,0.85); margin-bottom: 1.5rem; }
+    .cta-box a { display: inline-block; background: white; color: #0F6E56; font-weight: 700; padding: 0.85rem 2rem; border-radius: 8px; text-decoration: none; font-size: 1rem; }
+    .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th { background: #0F6E56; color: white; padding: 0.75rem 1rem; text-align: left; }
+    td { padding: 0.75rem 1rem; border-bottom: 1px solid #eee; }
+    tr:nth-child(even) { background: #f9f9f9; }
+    .footer { background: #1a1a1a; color: #999; padding: 2rem; text-align: center; font-size: 14px; }
+    .footer a { color: #0F6E56; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="https://fifthace.net">Fifth Ace</a>
+  <a href="https://fifthace.net/#kontakt" class="cta">Zamów audyt NIS2 →</a>
+</nav>
+
+<article>
+  <div class="hero">
+    <span class="tag">Reagowanie na incydenty</span>
+    <h1>Jak wykryć ransomware, zanim będzie za późno: praktyczny przewodnik dla brytyjskich MŚP</h1>
+    <div class="meta">
+      <span>Autor: Piotr Kleszcz, Fifth Ace</span>
+      <span>6 min czytania</span>
+      <span>Zaktualizowano: lipiec 2026</span>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <p>Kiedy widzisz żądanie okupu, szkoda jest już zrobiona. Twoje pliki są zaszyfrowane, kopie zapasowe to jedyne, co stoi między Tobą a decyzją o zapłacie, a każda godzina przestoju kosztuje pieniądze.</p>
+
+    <p>Prawdziwe pytanie brzmi nie "jak odzyskać dane po zaszyfrowaniu?", tylko "jak wykryć atak <em>w trakcie jego trwania</em> — zanim rozprzestrzeni się poza garstkę plików?"</p>
+
+    <p>Zbudowaliśmy laboratorium testowe, żeby to sprawdzić, wykorzystując dokładnie te same techniki, na których opierałby się system monitorujący w środowisku produkcyjnym.</p>
+
+    <div class="warning">
+      <strong>Ważne:</strong> Żadna strategia backupu nie zastąpi wczesnego wykrywania. Kopie zapasowe mówią Ci, jak odzyskać dane. Wykrywanie mówi Ci, <em>kiedy zatrzymać krwawienie</em> — często to różnica między utratą folderu a utratą całego serwera plików.
+    </div>
+
+    <h2>Dwa sygnały, które wykrywają ransomware wcześnie</h2>
+
+    <p>Ransomware zachowuje się w przewidywalny sposób, a dwa sygnały pojawiają się na długo przed tym, zanim atakujący skończy robotę:</p>
+
+    <p><strong>1. Zmiany rozszerzeń plików.</strong> Ransomware zmienia nazwy plików w trakcie szyfrowania — <code>.txt</code> staje się <code>.locked</code>, <code>.docx</code> staje się <code>.encrypted</code> i tak dalej. Skrypt monitorujący nieoczekiwane zmiany rozszerzeń w systemie plików wychwytuje to w kilka sekund, bez potrzeby specjalistycznego threat intelligence.</p>
+
+    <p><strong>2. Entropia Shannona.</strong> Zaszyfrowane dane wyglądają statystycznie inaczej niż dane normalne — są bardziej "losowe" na poziomie bajtów. Mierzy się to za pomocą entropii Shannona — sposobu oceny, jak nieprzewidywalna jest zawartość pliku. Zwykły tekst i dokumenty biurowe mieszczą się w niskim do umiarkowanego zakresie. Zaszyfrowane pliki skaczą w kierunku maksimum. Detektor liczący entropię plików może wykryć trwające szyfrowanie, nawet zanim pliki zostaną przemianowane.</p>
+
+    <h2>Co wykazał nasz test</h2>
+
+    <p>Bezpiecznie zasymulowaliśmy zachowanie ransomware — bez prawdziwego szyfrowania, jedynie realistyczna zmiana nazw plików — na zestawie przykładowych dokumentów, a następnie uruchomiliśmy skrypt wykrywający na wyniku.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Sprawdzenie</th><th>Wynik</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Dotknięte pliki</td><td>9</td></tr>
+          <tr><td>Wykryte podejrzane rozszerzenia</td><td>8</td></tr>
+          <tr><td>Werdykt</td><td><strong>CRITICAL — wykryto wskaźniki ransomware</strong></td></tr>
+          <tr><td>Zalecana reakcja</td><td>Izolacja systemu, zabezpieczenie obrazu dysku, sprawdzenie backupów, zgłoszenie incydentu</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Detektor oznaczył 8 z 9 dotkniętych plików wyłącznie na podstawie zmian rozszerzeń — jeszcze zanim potrzebna była analiza entropii. W środowisku produkcyjnym to różnica między wykryciem incydentu w pierwszej minucie a dowiedzeniem się o nim następnego dnia z żądania okupu.</p>
+
+    <h2>Dlaczego to ma znaczenie dla NIS2</h2>
+
+    <p>Dwa artykuły dyrektywy NIS2 są tu bezpośrednio istotne:</p>
+
+    <ul>
+      <li><strong>Artykuł 21</strong> wymaga wdrożenia środków zarządzania ryzykiem — a wykrywanie jest środkiem, nie dokumentem polityki. Posiadanie planu na <em>po</em> incydencie nie spełnia wymogu, jeśli nie masz sposobu na zauważenie, że incydent w ogóle się dzieje.</li>
+      <li><strong>Artykuł 23</strong> wymaga zgłoszenia istotnego incydentu w ciągu 24 godzin od momentu, w którym się o nim dowiedziałeś. Ten zegar nie zaczyna tykać, gdy zdecydujesz się zbadać sprawę — zaczyna tykać wtedy, gdy wykrycie powinno było zasygnalizować problem. Nie możesz zgłosić czegoś, czego nigdy nie wykryłeś.</li>
+    </ul>
+
+    <h2>Co to oznacza dla Twojej firmy</h2>
+
+    <p>Większość MŚP, z którymi rozmawiamy, ma kopie zapasowe. Niewiele z nich ma cokolwiek aktywnie monitorującego wczesne oznaki ransomware — zmiany nazw plików, skoki entropii przypominające szyfrowanie, nietypowe wzorce dostępu. Ta luka to dokładnie to, co ma domykać dobrze przeprowadzony przegląd bezpieczeństwa: nie tylko "czy masz backupy", ale "czy wiedziałbyś w ciągu kilku minut, gdyby coś zaczęło teraz szyfrować Twoje pliki".</p>
+
+    <p>Jeśli odpowiedź brzmi nie, to luka warta zamknięcia, zanim stanie się zgłoszeniem incydentu.</p>
+
+    <div class="cta-box">
+      <h2>Gotowy sprawdzić, na czym stoisz?</h2>
+      <p>Nasz NIS2 Business Audit daje Ci pełny obraz Twojej gotowości na zgodność — łącznie z gotowością do wykrywania i reagowania na incydenty — wraz z jasnym planem naprawy braków. Stała cena. Bez niespodzianek.</p>
+      <a href="https://fifthace.net/#kontakt">Zamów audyt NIS2 — £799 →</a>
+    </div>
+
+    <div class="cta-box">
+      <h2>Pobierz darmową listę kontrolną gotowości NIS2</h2>
+      <p>Nie jesteś jeszcze gotowy na audyt? Wykonaj darmową 5-minutową samoocenę i otrzymaj PDF prosto na skrzynkę.</p>
+      <a href="https://tally.so/r/VLAo7N">Pobierz darmową listę kontrolną NIS2 →</a>
+    </div>
+
+  </div>
+</article>
+
+<footer class="footer">
+  <p>© 2026 Fifth Ace Cybersecurity Ltd · <a href="https://fifthace.net">fifthace.net</a> · <a href="mailto:hello@fifthace.net">hello@fifthace.net</a></p>
+</footer>
+
+</body>
+</html>
