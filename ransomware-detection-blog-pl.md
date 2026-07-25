@@ -54,7 +54,7 @@ Jeśli odpowiedź brzmi nie, to luka warta zamknięcia, zanim stanie się zgłos
 
 Nasz NIS2 Business Audit daje Ci pełny obraz Twojej gotowości na zgodność — łącznie z gotowością do wykrywania i reagowania na incydenty — wraz z jasnym planem naprawy braków. Stała cena. Bez niespodzianek.
 
-**[Zamów audyt NIS2 — £799 →]**
+**[Zamów audyt NIS2 — £399 →]**
 
 </div>
 

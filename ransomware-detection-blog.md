@@ -54,7 +54,7 @@ If the answer is no, that's a gap worth closing before it becomes an incident re
 
 Our NIS2 Business Audit gives you a complete picture of your compliance posture — including detection and response readiness — with a clear plan to fix what's missing. Fixed price. No surprises.
 
-**[Book Your NIS2 Audit — £799 →]**
+**[Book Your NIS2 Audit — £399 →]**
 
 </div>
 

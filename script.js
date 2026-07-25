@@ -228,6 +228,7 @@ const i18n = {
       eyebrow: "Pakiety cenowe",
       title: "Przejrzyste ceny, konkretne efekty",
       intro: "Wszystkie usługi realizowane zdalnie. Ceny w funtach brytyjskich (GBP). Bez ukrytych kosztów.",
+      offerBadge: "Oferta na start — 50% zniżki, czas ograniczony",
       card1: {
         name: "Security Starter",
         desc: "Dla freelancerów i firm 1–10 osób. Szybki przegląd i podstawowe utwardzenie bezpieczeństwa.",
@@ -503,6 +504,7 @@ const i18n = {
       eyebrow: "Pricing",
       title: "Transparent pricing, clear outcomes",
       intro: "All services delivered remotely. Prices in British Pounds (GBP). No hidden costs.",
+      offerBadge: "Launch offer — 50% off, limited time",
       card1: {
         name: "Security Starter",
         desc: "For freelancers and 1–10 person businesses. Quick review and baseline security hardening.",
