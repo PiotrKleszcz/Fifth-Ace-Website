@@ -270,15 +270,9 @@ const i18n = {
     },
     resources: {
       title: "Zasoby",
-      item1Title: "Lista kontrolna zgodności z NIS2 dla firm z UK",
+      item1Title: "Blog",
       item1Desc:
-        "Praktyczny przewodnik po wymaganiach Artykułu 21 dyrektywy NIS2 dla firm zatrudniających 10–100 pracowników.",
-      item2Title: "What is a Penetration Test? A Guide for UK SMEs",
-      item2Desc:
-        "Plain-English explanation of what a pentest involves, how much it costs, and when you need one.",
-      item3Title: "Jak wykryć ransomware, zanim będzie za późno",
-      item3Desc:
-        "Dwa sygnały, które wykrywają atak ransomware wcześnie, oraz wyniki naszego laboratorium testowego.",
+        "Praktyczne przewodniki po zgodności z NIS2, testach bezpieczeństwa i wykrywaniu zagrożeń dla brytyjskich MŚP.",
       item4Title: "NIS2 Readiness Checklist",
       item4Desc: "Darmowa 5-minutowa samoocena dla MŚP. Pobierz PDF →",
     },
@@ -546,15 +540,9 @@ const i18n = {
     },
     resources: {
       title: "Resources",
-      item1Title: "NIS2 Compliance Checklist for UK SMEs",
+      item1Title: "Blog",
       item1Desc:
-        "A practical guide to NIS2 Article 21 requirements for businesses with 10-100 employees.",
-      item2Title: "What is a Penetration Test? A Guide for UK SMEs",
-      item2Desc:
-        "Plain-English explanation of what a pentest involves, how much it costs, and when you need one.",
-      item3Title: "How to Detect Ransomware Before It's Too Late",
-      item3Desc:
-        "The two signals that catch a ransomware attack early, and what our detection lab found when we tested them.",
+        "Practical guides on NIS2 compliance, security testing, and threat detection for UK SMEs.",
       item4Title: "NIS2 Readiness Checklist",
       item4Desc: "Free 5-minute self-assessment for UK SMEs. Get the PDF →",
     },
