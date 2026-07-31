@@ -268,14 +268,6 @@ const i18n = {
       desc: "Skontaktuj się z Fifth Ace i zaplanujmy bezpieczniejszą infrastrukturę.",
       emailPrompt: "Wolisz maila? Napisz bezpośrednio:",
     },
-    resources: {
-      title: "Zasoby",
-      item1Title: "Blog",
-      item1Desc:
-        "Praktyczne przewodniki po zgodności z NIS2, testach bezpieczeństwa i wykrywaniu zagrożeń dla brytyjskich MŚP.",
-      item4Title: "NIS2 Readiness Checklist",
-      item4Desc: "Darmowa 5-minutowa samoocena dla MŚP. Pobierz PDF →",
-    },
     footer: {
       follow: "Obserwuj nas",
       rights: "Wszelkie prawa zastrzeżone.",
@@ -537,14 +529,6 @@ const i18n = {
       title: "Need a trusted security partner?",
       desc: "Contact Fifth Ace and let's plan a safer infrastructure.",
       emailPrompt: "Prefer email? Write directly:",
-    },
-    resources: {
-      title: "Resources",
-      item1Title: "Blog",
-      item1Desc:
-        "Practical guides on NIS2 compliance, security testing, and threat detection for UK SMEs.",
-      item4Title: "NIS2 Readiness Checklist",
-      item4Desc: "Free 5-minute self-assessment for UK SMEs. Get the PDF →",
     },
     footer: {
       follow: "Follow us",
