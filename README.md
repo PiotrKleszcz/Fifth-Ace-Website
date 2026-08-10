@@ -9,7 +9,6 @@ A bilingual static business website for **Fifth Ace**, ready to publish on GitHu
 - static `HTML`, `CSS`, and `Vanilla JavaScript`,
 - bilingual content (`PL / EN`),
 - landing page plus focused service pages,
-- review section powered by a static JSON file,
 - no backend, login flow, or database required.
 
 ## Tech Stack
@@ -24,8 +23,7 @@ A bilingual static business website for **Fifth Ace**, ready to publish on GitHu
 ```text
 .
 ├── data/
-│   ├── .gitkeep
-│   └── reviews.json
+│   └── .gitkeep
 ├── index.html
 ├── styles.css
 ├── script.js
@@ -49,37 +47,6 @@ Then open:
 ```text
 http://127.0.0.1:8000
 ```
-
-## Reviews
-
-Published reviews live in [data/reviews.json](./data/reviews.json).
-
-Supported format:
-
-```json
-{
-  "reviews": [
-    {
-      "id": "review-1",
-      "authorName": "Anna K.",
-      "authorInitials": "AK",
-      "service": "securityAudit",
-      "rating": 5,
-      "comment": {
-        "pl": "Krótka opinia po polsku.",
-        "en": "Short review in English."
-      },
-      "updatedAt": "2026-04-22"
-    }
-  ]
-}
-```
-
-Notes:
-
-- `comment` can be either a plain string or an object with `pl` and `en` variants.
-- `service` should match one of: `securityAudit`, `penetrationTest`, `itSupport`, `laptopSecurity`, `cyberHygiene`.
-- reviews are displayed in descending date order.
 
 ## Deployment
 

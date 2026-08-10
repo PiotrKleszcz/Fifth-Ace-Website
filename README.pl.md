@@ -9,7 +9,6 @@ Dwujęzyczna, statyczna strona firmowa **Fifth Ace**, gotowa do publikacji na Gi
 - statyczny frontend w `HTML`, `CSS` i `Vanilla JavaScript`,
 - treści w dwóch językach (`PL / EN`),
 - strona główna oraz osobne strony usług,
-- sekcja opinii zasilana przez statyczny plik JSON,
 - brak backendu, logowania i bazy danych.
 
 ## Stack technologiczny
@@ -24,8 +23,7 @@ Dwujęzyczna, statyczna strona firmowa **Fifth Ace**, gotowa do publikacji na Gi
 ```text
 .
 ├── data/
-│   ├── .gitkeep
-│   └── reviews.json
+│   └── .gitkeep
 ├── index.html
 ├── styles.css
 ├── script.js
@@ -49,37 +47,6 @@ Następnie otwórz:
 ```text
 http://127.0.0.1:8000
 ```
-
-## Opinie
-
-Opublikowane opinie znajdują się w pliku [data/reviews.json](./data/reviews.json).
-
-Obsługiwany format:
-
-```json
-{
-  "reviews": [
-    {
-      "id": "review-1",
-      "authorName": "Anna K.",
-      "authorInitials": "AK",
-      "service": "securityAudit",
-      "rating": 5,
-      "comment": {
-        "pl": "Krótka opinia po polsku.",
-        "en": "Short review in English."
-      },
-      "updatedAt": "2026-04-22"
-    }
-  ]
-}
-```
-
-Uwagi:
-
-- `comment` może być zwykłym stringiem albo obiektem z wersjami `pl` i `en`,
-- `service` powinno mieć jedną z wartości: `securityAudit`, `penetrationTest`, `itSupport`, `laptopSecurity`, `cyberHygiene`,
-- opinie są sortowane malejąco po dacie.
 
 ## Wdrożenie
 
