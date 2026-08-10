@@ -5,7 +5,6 @@ const pageTitleNode = document.getElementById("pageTitle");
 const langSwitchNode = document.querySelector(".lang-switch");
 const languageButtons = document.querySelectorAll("[data-lang-switch]");
 const translatableNodes = document.querySelectorAll("[data-i18n]");
-const reviewsListNode = document.getElementById("reviewsList");
 
 let activeLanguage = "pl";
 
@@ -22,7 +21,6 @@ const i18n = {
     nav: {
       services: "Usługi",
       guides: "Strefa usług",
-      reviews: "Opinie",
       pricing: "Cennik",
       contact: "Kontakt",
     },
@@ -122,66 +120,6 @@ const i18n = {
         title: "Zabezpieczenie laptopa i sieci Wi-Fi",
         desc: "Hardening Windows, router, MFA, Defender i szybki security check dla małego biznesu lub domu.",
         cta: "Przejdź do strony",
-      },
-    },
-    reviews: {
-      eyebrow: "Zweryfikowane opinie klientów",
-      title: "Opinie po zakończonych usługach",
-      intro:
-        "Ta wersja strony działa w pełni statycznie na GitHub Pages. Opinie publikujemy ręcznie po potwierdzonej współpracy, bez formularza logowania i bez zapisu danych po stronie serwera.",
-      highlight1: {
-        title: "Ręczna weryfikacja",
-        desc: "Każda opinia trafia na stronę dopiero po potwierdzeniu zakresu współpracy i zgody na publikację.",
-      },
-      highlight2: {
-        title: "Minimum danych",
-        desc: "Publikowane są tylko uzgodnione informacje, najczęściej imię i inicjał nazwiska albo nazwa firmy.",
-      },
-      highlight3: {
-        title: "Wersja zgodna z GitHub Pages",
-        desc: "Sekcja korzysta ze statycznego pliku z opiniami, więc cała strona pozostaje szybka i prosta we wdrożeniu.",
-      },
-      listTitle: "Opublikowane opinie",
-      listDesc:
-        "Opinie są ładowane ze statycznego pliku i aktualizowane ręcznie po zakończonej współpracy.",
-      empty: {
-        title: "Jeszcze nie ma opublikowanych opinii",
-        desc: "Gdy pojawi się pierwsza zatwierdzona opinia, zobaczysz ją tutaj razem z oceną i zakresem usługi.",
-      },
-      loading: {
-        title: "Ładowanie opinii",
-        desc: "Pobieramy opublikowane opinie ze statycznego pliku strony.",
-      },
-      loadError: {
-        title: "Nie udało się wczytać opinii",
-        desc: "Sprawdź, czy plik data/reviews.json jest dostępny na hostingu.",
-      },
-      portal: {
-        title: "Jak dodać opinię",
-        desc: "Jeśli współpraca z Fifth Ace jest zakończona, możesz przesłać krótką opinię mailowo albo przez Instagram. Po potwierdzeniu dodam ją ręcznie do strony.",
-        privacy:
-          "Publikacja odbywa się bez publicznego formularza i bez zbierania haseł. Zakres widocznych danych ustalamy indywidualnie.",
-        step1: {
-          title: "Wyślij kilka zdań",
-          desc: "Opisz przebieg współpracy, komunikację i najważniejszy efekt usługi.",
-        },
-        step2: {
-          title: "Dodaj zakres usługi",
-          desc: "Wskaż, czy chodziło o audyt, pentest, wsparcie IT, zabezpieczenie laptopa i Wi-Fi albo cyber hygiene.",
-        },
-        step3: {
-          title: "Publikacja po akceptacji",
-          desc: "Po potwierdzeniu treści opinia trafia do pliku strony i pojawia się w tej sekcji.",
-        },
-        emailCta: "Wyślij opinię mailem",
-        linkedinCta: "Napisz na LinkedIn",
-      },
-      services: {
-        securityAudit: "Audyt bezpieczeństwa",
-        penetrationTest: "Testy penetracyjne",
-        itSupport: "Wsparcie IT",
-        laptopSecurity: "Zabezpieczenie laptopa i Wi-Fi",
-        cyberHygiene: "Cyber hygiene dla małych firm",
       },
     },
     faq: {
@@ -285,7 +223,6 @@ const i18n = {
     nav: {
       services: "Services",
       guides: "Service pages",
-      reviews: "Reviews",
       pricing: "Pricing",
       contact: "Contact",
     },
@@ -385,65 +322,6 @@ const i18n = {
         title: "Laptop and Wi-Fi security hardening",
         desc: "Windows hardening, router review, MFA, Defender, and a fast security check for home or small business environments.",
         cta: "Open page",
-      },
-    },
-    reviews: {
-      eyebrow: "Verified client feedback",
-      title: "Reviews after completed services",
-      intro:
-        "This version of the website runs as a fully static GitHub Pages site. Reviews are published manually after a confirmed collaboration, without a sign-in form and without storing client data on the server.",
-      highlight1: {
-        title: "Manual verification",
-        desc: "Each review is published only after the service scope and publication consent are confirmed.",
-      },
-      highlight2: {
-        title: "Minimal data",
-        desc: "Only agreed details are published, most often a first name and last-name initial or a company name.",
-      },
-      highlight3: {
-        title: "GitHub Pages ready",
-        desc: "The section uses a static reviews file, so the whole site stays fast and simple to deploy.",
-      },
-      listTitle: "Published reviews",
-      listDesc: "Reviews are loaded from a static file and updated manually after completed work.",
-      empty: {
-        title: "There are no published reviews yet",
-        desc: "Once the first approved review is added, it will appear here together with its rating and service scope.",
-      },
-      loading: {
-        title: "Loading reviews",
-        desc: "Published reviews are being loaded from the website's static data file.",
-      },
-      loadError: {
-        title: "Reviews could not be loaded",
-        desc: "Check whether the data/reviews.json file is available on the host.",
-      },
-      portal: {
-        title: "How to add a review",
-        desc: "If your work with Fifth Ace is complete, you can send a short review by email or Instagram. After confirmation, it will be added to the site manually.",
-        privacy:
-          "Publication happens without a public form and without collecting passwords. The visible scope of personal details is agreed individually.",
-        step1: {
-          title: "Send a few sentences",
-          desc: "Describe the collaboration, communication, and the most important service outcome.",
-        },
-        step2: {
-          title: "Add the service scope",
-          desc: "Mention whether the work covered an audit, pentest, IT support, laptop and Wi-Fi security, or cyber hygiene.",
-        },
-        step3: {
-          title: "Publish after approval",
-          desc: "Once the wording is confirmed, the review is added to the site data file and appears in this section.",
-        },
-        emailCta: "Send a review by email",
-        linkedinCta: "Message on LinkedIn",
-      },
-      services: {
-        securityAudit: "Security audit",
-        penetrationTest: "Penetration testing",
-        itSupport: "IT support",
-        laptopSecurity: "Laptop and Wi-Fi security",
-        cyberHygiene: "Cyber hygiene for small businesses",
       },
     },
     faq: {
@@ -549,14 +427,6 @@ const STORAGE_KEYS = {
   theme: "fifthace_theme",
 };
 
-const REVIEWS_DATA_PATH = "data/reviews.json";
-
-const appState = {
-  reviews: [],
-  reviewsLoading: true,
-  reviewsLoadFailed: false,
-};
-
 function t(key, replacements = {}) {
   const template = getTranslation(activeLanguage, key) ?? getTranslation("pl", key) ?? "";
   return template.replace(/\{(\w+)\}/g, (_, token) => replacements[token] ?? "");
@@ -593,165 +463,6 @@ function escapeHtml(value) {
   });
 }
 
-function formatReviewDate(dateString) {
-  if (!dateString) {
-    return "";
-  }
-
-  const reviewDate = new Date(dateString);
-
-  if (Number.isNaN(reviewDate.getTime())) {
-    return "";
-  }
-
-  const locale = activeLanguage === "en" ? "en-GB" : "pl-PL";
-  return new Intl.DateTimeFormat(locale, {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  }).format(reviewDate);
-}
-
-function getServiceLabel(serviceKey) {
-  return t(`reviews.services.${serviceKey}`) || serviceKey;
-}
-
-function getLocalizedValue(value) {
-  if (typeof value === "string") {
-    return value;
-  }
-
-  if (value && typeof value === "object") {
-    return value[activeLanguage] ?? value.pl ?? value.en ?? "";
-  }
-
-  return "";
-}
-
-function createStars(rating) {
-  const normalizedRating = Math.max(0, Math.min(5, Number(rating) || 0));
-  return `${"★".repeat(normalizedRating)}${"☆".repeat(5 - normalizedRating)}`;
-}
-
-function sortReviews(reviews) {
-  return [...reviews].sort((left, right) => {
-    const leftDate = new Date(left.updatedAt ?? left.createdAt ?? left.date ?? 0).getTime();
-    const rightDate = new Date(right.updatedAt ?? right.createdAt ?? right.date ?? 0).getTime();
-    return rightDate - leftDate;
-  });
-}
-
-function getReviewAuthorName(review) {
-  return getLocalizedValue(review.authorName) || "Fifth Ace";
-}
-
-function getReviewInitials(review) {
-  if (review.authorInitials) {
-    return String(review.authorInitials).slice(0, 3).toUpperCase();
-  }
-
-  const initials = getReviewAuthorName(review)
-    .split(/\s+/)
-    .filter(Boolean)
-    .slice(0, 2)
-    .map((part) => part.charAt(0).toUpperCase())
-    .join("");
-
-  return initials || "FA";
-}
-
-function getReviewComment(review) {
-  return getLocalizedValue(review.comment);
-}
-
-function renderReviewsState(titleKey, descKey) {
-  if (!reviewsListNode) {
-    return;
-  }
-
-  reviewsListNode.innerHTML = `
-    <div class="reviews-empty">
-      <strong>${escapeHtml(t(titleKey))}</strong>
-      <p>${escapeHtml(t(descKey))}</p>
-    </div>
-  `;
-}
-
-function renderReviews() {
-  if (!reviewsListNode) {
-    return;
-  }
-
-  if (appState.reviewsLoading) {
-    renderReviewsState("reviews.loading.title", "reviews.loading.desc");
-    return;
-  }
-
-  if (appState.reviewsLoadFailed) {
-    renderReviewsState("reviews.loadError.title", "reviews.loadError.desc");
-    return;
-  }
-
-  if (!appState.reviews.length) {
-    renderReviewsState("reviews.empty.title", "reviews.empty.desc");
-    return;
-  }
-
-  reviewsListNode.innerHTML = appState.reviews
-    .map((review) => {
-      const authorName = escapeHtml(getReviewAuthorName(review));
-      const authorInitials = escapeHtml(getReviewInitials(review));
-      const serviceLabel = escapeHtml(getServiceLabel(review.service));
-      const reviewDate = escapeHtml(
-        formatReviewDate(review.updatedAt ?? review.createdAt ?? review.date)
-      );
-      const message = escapeHtml(getReviewComment(review));
-      const stars = createStars(review.rating);
-
-      return `
-        <article class="review-card">
-          <div class="review-card-head">
-            <div class="review-card-author">
-              <div class="review-avatar" aria-hidden="true">${authorInitials}</div>
-              <div class="review-author-meta">
-                <strong>${authorName}</strong>
-                <span>${reviewDate}</span>
-              </div>
-            </div>
-            <div class="review-badge">${serviceLabel}</div>
-          </div>
-          <p class="review-stars">${stars}</p>
-          <p class="review-message">${message}</p>
-        </article>
-      `;
-    })
-    .join("");
-}
-
-async function loadReviews() {
-  appState.reviewsLoading = true;
-  appState.reviewsLoadFailed = false;
-  renderReviews();
-
-  try {
-    const response = await fetch(REVIEWS_DATA_PATH, { cache: "no-store" });
-
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
-    }
-
-    const payload = await response.json();
-    appState.reviews = sortReviews(Array.isArray(payload.reviews) ? payload.reviews : []);
-    appState.reviewsLoadFailed = false;
-  } catch (error) {
-    appState.reviews = [];
-    appState.reviewsLoadFailed = true;
-  } finally {
-    appState.reviewsLoading = false;
-    renderReviews();
-  }
-}
-
 function applyLanguage(language) {
   const selectedLanguage = i18n[language] ? language : "pl";
   activeLanguage = selectedLanguage;
@@ -786,7 +497,6 @@ function applyLanguage(language) {
   });
 
   setStoredString(STORAGE_KEYS.language, selectedLanguage);
-  renderReviews();
 }
 
 if (yearNode) {
@@ -805,14 +515,12 @@ if (brandAvatarImage) {
 
 const savedLanguage = getStoredString(STORAGE_KEYS.language);
 applyLanguage(savedLanguage || "pl");
-renderReviews();
 
 languageButtons.forEach((button) => {
   button.addEventListener("click", () => {
     applyLanguage(button.dataset.langSwitch);
   });
 });
-loadReviews();
 
 // === Theme toggle ===
 const MOON_SVG = `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
