@@ -8,6 +8,7 @@
   --cyan: #00d8ff;
   --pink: #ff4fd8;
   --blue: #4a86ff;
+  --icon-accent: var(--cyan);
   --radius: 18px;
   --shadow: 0 20px 60px rgba(0, 0, 0, 0.38);
 }
@@ -852,6 +853,17 @@ h1 {
   box-shadow: 0 0 50px rgba(0, 216, 255, 0.14), var(--shadow);
 }
 
+.pricing-icon {
+  margin: 0 0 14px;
+  color: var(--icon-accent);
+}
+
+.pricing-icon svg {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
 .pricing-name {
   margin: 0 0 8px;
   font-family: "Orbitron", sans-serif;
@@ -998,6 +1010,7 @@ html[data-theme="light"] {
   --muted: #4a607e;
   --line: rgba(13, 30, 70, 0.13);
   --shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  --icon-accent: var(--blue);
 }
 
 html[data-theme="light"] body {
