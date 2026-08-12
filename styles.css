@@ -770,6 +770,35 @@ h1 {
 }
 
 /* ===== For Whom ===== */
+.section-photo {
+  position: relative;
+  margin: 0 0 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.section-photo img {
+  display: block;
+  width: 100%;
+  height: clamp(200px, 30vw, 320px);
+  object-fit: cover;
+}
+
+.section-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+      160deg,
+      rgba(8, 12, 20, 0.82) 0%,
+      rgba(8, 12, 20, 0.66) 50%,
+      rgba(8, 12, 20, 0.78) 100%
+    ),
+    radial-gradient(circle at 85% 12%, rgba(0, 216, 255, 0.22), transparent 55%);
+}
+
 .for-whom-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1071,14 +1100,44 @@ body,
 
 .reveal {
   opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 0.55s ease, transform 0.55s ease,
+  transform: translateY(24px);
+  transition: opacity 0.55s ease-out, transform 0.55s ease-out,
     background 0.25s ease, border-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Staggered reveal for card rows: each sibling animates ~100ms after the
+   previous one, capped at 0.4s so rows with many cards don't feel sluggish. */
+.for-whom-grid > .reveal:nth-child(2),
+.cards > .reveal:nth-child(2),
+.pricing-grid > .reveal:nth-child(2),
+.faq-grid > .reveal:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.for-whom-grid > .reveal:nth-child(3),
+.cards > .reveal:nth-child(3),
+.pricing-grid > .reveal:nth-child(3),
+.faq-grid > .reveal:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.for-whom-grid > .reveal:nth-child(4),
+.cards > .reveal:nth-child(4),
+.pricing-grid > .reveal:nth-child(4),
+.faq-grid > .reveal:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.for-whom-grid > .reveal:nth-child(n + 5),
+.cards > .reveal:nth-child(n + 5),
+.pricing-grid > .reveal:nth-child(n + 5),
+.faq-grid > .reveal:nth-child(n + 5) {
+  transition-delay: 0.4s;
 }
 
 @media (max-width: 960px) {
