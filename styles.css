@@ -486,6 +486,25 @@ h1 {
   margin-bottom: 14px;
 }
 
+.section-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 216, 255, 0.35);
+  background: rgba(0, 216, 255, 0.08);
+  color: var(--icon-accent);
+}
+
+.section-icon svg {
+  display: block;
+  width: 26px;
+  height: 26px;
+}
+
 .btn:focus-visible,
 .social-link:focus-visible,
 .nav a:focus-visible {
@@ -794,11 +813,11 @@ h1 {
   inset: 0;
   background: linear-gradient(
       160deg,
-      rgba(8, 12, 20, 0.82) 0%,
-      rgba(8, 12, 20, 0.66) 50%,
-      rgba(8, 12, 20, 0.78) 100%
+      rgba(8, 12, 20, 0.38) 0%,
+      rgba(8, 12, 20, 0.12) 45%,
+      rgba(8, 12, 20, 0.3) 100%
     ),
-    radial-gradient(circle at 85% 12%, rgba(0, 216, 255, 0.22), transparent 55%);
+    radial-gradient(circle at 85% 12%, rgba(0, 216, 255, 0.14), transparent 55%);
 }
 
 .for-whom-grid {
@@ -1152,6 +1171,40 @@ body,
 .pricing-grid > .reveal:nth-child(n + 5),
 .faq-grid > .reveal:nth-child(n + 5) {
   transition-delay: 0.4s;
+}
+
+/* Hover lift for card tiles. The compound .card.reveal selector (etc.) below
+   wins on specificity over both .card and .reveal alone, so transform gets a
+   snappier 0.35s here instead of the 0.55s used for the scroll-in entrance. */
+.card.reveal,
+.pricing-card.reveal,
+.for-whom-card.reveal,
+.faq-item.reveal {
+  transition: opacity 0.55s ease-out, transform 0.35s ease-out,
+    background 0.25s ease, border-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover,
+.pricing-card:hover,
+.for-whom-card:hover,
+.faq-item:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 216, 255, 0.4);
+  box-shadow: 0 20px 50px rgba(0, 216, 255, 0.16), var(--shadow);
+}
+
+.pricing-card.is-featured:hover {
+  box-shadow: 0 0 60px rgba(0, 216, 255, 0.2), 0 20px 50px rgba(0, 216, 255, 0.16),
+    var(--shadow);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card:hover,
+  .pricing-card:hover,
+  .for-whom-card:hover,
+  .faq-item:hover {
+    transform: none;
+  }
 }
 
 @media (max-width: 960px) {
