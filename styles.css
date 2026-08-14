@@ -800,7 +800,8 @@ h1 {
   box-shadow: var(--shadow);
 }
 
-.section-photo img {
+.section-photo img,
+.section-photo svg {
   display: block;
   width: 100%;
   height: clamp(200px, 30vw, 320px);
@@ -1133,8 +1134,8 @@ body,
 
 .reveal {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.55s ease-out, transform 0.55s ease-out,
+  transform: translateY(48px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out,
     background 0.25s ease, border-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -1173,21 +1174,15 @@ body,
   transition-delay: 0.4s;
 }
 
-/* Hover lift for card tiles. The compound .card.reveal selector (etc.) below
-   wins on specificity over both .card and .reveal alone, so transform gets a
-   snappier 0.35s here instead of the 0.55s used for the scroll-in entrance. */
-.card.reveal,
-.pricing-card.reveal,
-.for-whom-card.reveal,
-.faq-item.reveal {
-  transition: opacity 0.55s ease-out, transform 0.35s ease-out,
-    background 0.25s ease, border-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
-}
-
+/* Hover lift for card tiles. Transform's transition is overridden only inside
+   :hover itself (not on a .card.reveal-style compound selector) so the 0.35s
+   snappy speed applies solely to the hover interaction, leaving the 0.7s
+   scroll-in entrance defined on .reveal untouched. */
 .card:hover,
 .pricing-card:hover,
 .for-whom-card:hover,
 .faq-item:hover {
+  transition: transform 0.35s ease-out, border-color 0.25s ease, box-shadow 0.25s ease;
   transform: translateY(-6px);
   border-color: rgba(0, 216, 255, 0.4);
   box-shadow: 0 20px 50px rgba(0, 216, 255, 0.16), var(--shadow);
