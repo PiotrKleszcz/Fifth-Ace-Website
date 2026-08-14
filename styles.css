@@ -300,10 +300,11 @@ h3 {
 
 h1 {
   font-family: "Orbitron", sans-serif;
-  font-size: clamp(2rem, 5vw, 3.6rem);
+  font-size: clamp(1.35rem, 6.2vw, 3.6rem);
   margin: 18px 0 14px;
-  max-width: 16ch;
-  overflow-wrap: break-word;
+  max-width: 20ch;
+  overflow-wrap: normal;
+  word-break: keep-all;
 }
 
 .lead {

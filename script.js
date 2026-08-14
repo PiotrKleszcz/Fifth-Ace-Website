@@ -30,7 +30,7 @@ const i18n = {
       lead1:
         "Dyrektywa NIS2 zobowiązuje setki tysięcy firm w UE do spełnienia wymogów bezpieczeństwa IT — pod groźbą kar i odpowiedzialności zarządu. Fifth Ace przeprowadza audyty zgodności, testy penetracyjne i wdrożenia dla MŚP: zdalnie, sprawnie, z raportem w 5 dni roboczych.",
       lead2:
-        "Specjalizujemy się w cyberbezpieczeństwie dla firm z sektora prawnego, rachunkowego, e-commerce i IT zatrudniających 10–100 osób.",
+        "Specjalizujemy się w cyberbezpieczeństwie dla firm z sektora prawnego, rachunkowego i e-commerce zatrudniających 10–100 osób.",
       lead3:
         "Kompleksowe wsparcie: od analizy luk i testów penetracyjnych, przez wdrożenie polityk bezpieczeństwa, po szkolenia zespołu i monitoring.",
       ctaConsult: "Umów bezpłatną konsultację",
@@ -232,7 +232,7 @@ const i18n = {
       lead1:
         "The NIS2 directive requires hundreds of thousands of EU and UK businesses to meet cybersecurity standards — or face fines and management liability. Fifth Ace delivers compliance audits, penetration tests, and implementation support for SMEs: remotely, efficiently, with a report in 5 working days.",
       lead2:
-        "We specialise in cybersecurity for law firms, accountancies, e-commerce, and IT companies with 10–100 employees.",
+        "We specialise in cybersecurity for law firms, accountancies, and e-commerce companies with 10–100 employees.",
       lead3:
         "End-to-end support: from gap analysis and penetration testing to security policy implementation, team training, and ongoing monitoring.",
       ctaConsult: "Book a free consultation",
