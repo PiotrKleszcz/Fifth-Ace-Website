@@ -395,6 +395,41 @@ h1 {
   text-align: center;
 }
 
+.lead-magnet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 6px auto 0;
+  padding: 20px 26px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(0, 216, 255, 0.08), rgba(255, 79, 216, 0.05));
+}
+
+.lead-magnet-text {
+  flex: 1 1 320px;
+}
+
+.lead-magnet-title {
+  display: block;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.05rem;
+  color: var(--text);
+  margin: 0 0 4px;
+}
+
+.lead-magnet-text p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.lead-magnet .btn {
+  flex-shrink: 0;
+}
+
 .card {
   border: 1px solid var(--line);
   border-radius: var(--radius);

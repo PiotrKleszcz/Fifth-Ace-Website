@@ -109,6 +109,11 @@ const i18n = {
       },
       ctaAll: "Zobacz pełne portfolio (20+ laboratoriów) →",
     },
+    leadMagnet: {
+      title: "Sprawdź, gdzie stoisz — za darmo",
+      desc: "5-minutowa samoocena NIS2 dla MŚP — 12 pytań, natychmiastowy wynik i checklista PDF na e-mail.",
+      cta: "Pobierz darmową checklistę NIS2",
+    },
     seoHub: {
       title: "Strefa usług i porad bezpieczeństwa",
       intro:
@@ -332,6 +337,11 @@ const i18n = {
         cta: "View code on GitHub",
       },
       ctaAll: "See the full portfolio (20+ labs) →",
+    },
+    leadMagnet: {
+      title: "Check where you stand — for free",
+      desc: "A 5-minute NIS2 self-assessment for SMEs — 12 questions, an instant result, and a PDF checklist sent to your inbox.",
+      cta: "Download the free NIS2 checklist",
     },
     seoHub: {
       title: "Service pages and security guides",
