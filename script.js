@@ -203,6 +203,7 @@ const i18n = {
         li3: "Przewodnik wdrożenia MFA i menedżera haseł",
         li4: "Pisemny raport bezpieczeństwa (PDF)",
         cta: "Zamów teraz",
+        cta2: "Kup teraz online",
       },
       card2: {
         name: "NIS2 Business Audit",
@@ -215,6 +216,7 @@ const i18n = {
         li5: "30 dni wsparcia email po audycie",
         li6: "Retest po wdrożeniu poprawek",
         cta: "Zamów audyt NIS2",
+        cta2: "Zapłać za audyt",
       },
       card3: {
         name: "vCISO Monthly",
@@ -226,6 +228,7 @@ const i18n = {
         li4: "Kwartalny test penetracyjny",
         li5: "Aktualizacje polityk bezpieczeństwa",
         cta: "Zacznij współpracę",
+        cta2: "Subskrybuj online",
       },
     },
     contact: {
@@ -432,6 +435,7 @@ const i18n = {
         li3: "MFA and password manager setup guide",
         li4: "Written security report (PDF)",
         cta: "Order now",
+        cta2: "Get Started",
       },
       card2: {
         name: "NIS2 Business Audit",
@@ -444,6 +448,7 @@ const i18n = {
         li5: "30-day post-audit email support",
         li6: "Re-test after remediation",
         cta: "Order NIS2 audit",
+        cta2: "Get Started",
       },
       card3: {
         name: "vCISO Monthly",
@@ -455,6 +460,7 @@ const i18n = {
         li4: "Quarterly penetration test",
         li5: "Security policy updates",
         cta: "Start collaboration",
+        cta2: "Get Started",
       },
     },
     contact: {
