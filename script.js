@@ -87,6 +87,28 @@ const i18n = {
         },
       },
     },
+    portfolio: {
+      eyebrow: "Portfolio techniczne",
+      title: "Dowód, nie tylko deklaracje",
+      intro:
+        "Każda usługa, którą oferujemy, opiera się na praktycznym doświadczeniu — nie tylko na teorii. Poniżej znajdziesz wybrane laboratoria bezpieczeństwa, które dokumentujemy publicznie na GitHub: testy penetracyjne, wykrywanie zagrożeń i analizę podatności, z mapowaniem na wymogi NIS2.",
+      card1: {
+        title: "Wykrywanie ransomware w czasie rzeczywistym",
+        desc: "Symulacja ataku ransomware na Windows 11 i jego wykrycie w czasie rzeczywistym metodami analizy entropii i integralności plików.",
+        cta: "Zobacz kod na GitHub",
+      },
+      card2: {
+        title: "Ocena podatności infrastruktury",
+        desc: "Pełny proces testu: rekonesans, skanowanie podatności i raport z 7 udokumentowanymi ustaleniami ocenionymi wg poziomu ryzyka.",
+        cta: "Zobacz kod na GitHub",
+      },
+      card3: {
+        title: "Wdrożenie szyfrowania TLS od podstaw",
+        desc: "Budowa własnego CA, podpisanie certyfikatu serwera i konfiguracja HTTPS zgodna z wymogami NIS2.",
+        cta: "Zobacz kod na GitHub",
+      },
+      ctaAll: "Zobacz pełne portfolio (20+ laboratoriów) →",
+    },
     seoHub: {
       title: "Strefa usług i porad bezpieczeństwa",
       intro:
@@ -288,6 +310,28 @@ const i18n = {
           li3: "Guest network",
         },
       },
+    },
+    portfolio: {
+      eyebrow: "Technical portfolio",
+      title: "Proof, not just claims",
+      intro:
+        "Every service we offer is grounded in hands-on experience, not just theory. Below are selected security labs we document publicly on GitHub — penetration testing, threat detection, and vulnerability analysis, mapped to NIS2 requirements.",
+      card1: {
+        title: "Real-time ransomware detection",
+        desc: "Simulated a ransomware attack on Windows 11 and detected it in real time using entropy analysis and file-integrity monitoring.",
+        cta: "View code on GitHub",
+      },
+      card2: {
+        title: "Infrastructure vulnerability assessment",
+        desc: "Full penetration-testing workflow — reconnaissance, vulnerability scanning, and a report with 7 findings rated by risk.",
+        cta: "View code on GitHub",
+      },
+      card3: {
+        title: "TLS encryption built from scratch",
+        desc: "Built a custom CA, signed a server certificate, and configured HTTPS end to end in line with NIS2.",
+        cta: "View code on GitHub",
+      },
+      ctaAll: "See the full portfolio (20+ labs) →",
     },
     seoHub: {
       title: "Service pages and security guides",
