@@ -54,14 +54,6 @@ const i18n = {
         li3: "Retesty po wdrożeniu poprawek",
         cta: "Zobacz stronę usługi",
       },
-      card3: {
-        title: "Wsparcie IT",
-        desc: "Szybka pomoc techniczna dla zespołów, administracja środowiskiem i stała opieka nad infrastrukturą.",
-        li1: "Obsługa zgłoszeń i SLA dla firm",
-        li2: "Administracja serwerami i stacjami roboczymi",
-        li3: "Kopie zapasowe, odzyskiwanie i ciągłość działania",
-        cta: "Zobacz stronę usługi",
-      },
       now: {
         title: "Usługi dostępne od ręki",
         card1: {
@@ -84,6 +76,14 @@ const i18n = {
           li1: "Konfiguracja routera",
           li2: "Szyfrowanie Wi-Fi",
           li3: "Sieć gościnna",
+        },
+        card4: {
+          title: "Wsparcie IT",
+          desc: "Szybka pomoc techniczna dla zespołów, administracja środowiskiem i stała opieka nad infrastrukturą.",
+          li1: "Obsługa zgłoszeń i SLA dla firm",
+          li2: "Administracja serwerami i stacjami roboczymi",
+          li3: "Kopie zapasowe, odzyskiwanie i ciągłość działania",
+          cta: "Zobacz stronę usługi",
         },
       },
     },
@@ -286,14 +286,6 @@ const i18n = {
         li3: "Re-tests after remediation",
         cta: "Open service page",
       },
-      card3: {
-        title: "IT support",
-        desc: "Fast technical assistance for teams, environment administration, and continuous infrastructure care.",
-        li1: "Ticket handling and SLA support for companies",
-        li2: "Server and workstation administration",
-        li3: "Backups, recovery, and business continuity",
-        cta: "Open service page",
-      },
       now: {
         title: "Services available right now",
         card1: {
@@ -316,6 +308,14 @@ const i18n = {
           li1: "Router configuration",
           li2: "Wi-Fi encryption",
           li3: "Guest network",
+        },
+        card4: {
+          title: "IT support",
+          desc: "Fast technical assistance for teams, environment administration, and continuous infrastructure care.",
+          li1: "Ticket handling and SLA support for companies",
+          li2: "Server and workstation administration",
+          li3: "Backups, recovery, and business continuity",
+          cta: "Open service page",
         },
       },
     },

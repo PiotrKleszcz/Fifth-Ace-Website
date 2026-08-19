@@ -380,6 +380,20 @@ h1 {
   gap: 18px;
 }
 
+/* Desktop-only overrides for card grids that don't have exactly 3 items,
+   so they read as an intentional layout instead of a 3-column grid with a
+   gap where a card is "missing". Scoped to min-width so the existing
+   960px/760px breakpoints below still fully control tablet/mobile. */
+@media (min-width: 961px) {
+  .cards-pair {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .services-now .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .services-now {
   margin-top: 28px;
 }
