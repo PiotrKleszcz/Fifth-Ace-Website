@@ -8,6 +8,7 @@
   --cyan: #00d8ff;
   --pink: #ff4fd8;
   --blue: #4a86ff;
+  --navy-mid: #14304f;
   --icon-accent: var(--cyan);
   --radius: 18px;
   --shadow: 0 20px 60px rgba(0, 0, 0, 0.38);
@@ -271,8 +272,8 @@ body.no-brand-avatar .brand-avatar-img {
 }
 
 .lang-btn.is-active {
-  color: #030710;
-  background: linear-gradient(135deg, var(--cyan), var(--pink));
+  color: var(--text);
+  background: linear-gradient(135deg, var(--navy-mid), #1e90ff);
 }
 
 .hero {
@@ -349,8 +350,8 @@ h1 {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--cyan), var(--pink));
-  color: #030710;
+  background: linear-gradient(135deg, var(--navy-mid), #1e90ff);
+  color: var(--text);
   box-shadow: 0 10px 30px rgba(0, 216, 255, 0.25);
 }
 
@@ -979,9 +980,9 @@ h1 {
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.03em;
-  color: var(--pink);
-  border: 1px solid rgba(255, 79, 216, 0.4);
-  background: rgba(255, 79, 216, 0.08);
+  color: #1e90ff;
+  border: 1px solid rgba(30, 144, 255, 0.4);
+  background: rgba(30, 144, 255, 0.08);
 }
 
 .pricing-features {
