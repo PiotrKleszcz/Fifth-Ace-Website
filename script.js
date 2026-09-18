@@ -25,14 +25,14 @@ const i18n = {
       contact: "Kontakt",
     },
     hero: {
-      eyebrow: "NIS2 • Audyt bezpieczeństwa • Pentesty dla MŚP",
-      title: "Cyberbezpieczeństwo i audyt NIS2 dla firm do 100 osób",
+      eyebrow: "Cyber Essentials • Audyt bezpieczeństwa • Pentesty dla MŚP",
+      title: "Cyber Essentials i audyt bezpieczeństwa dla firm do 100 osób",
       lead1:
-        "Dyrektywa NIS2 zobowiązuje setki tysięcy firm w UE do spełnienia wymogów bezpieczeństwa IT — pod groźbą kar i odpowiedzialności zarządu. Fifth Ace przeprowadza audyty zgodności, testy penetracyjne i wdrożenia dla MŚP: zdalnie, sprawnie, z raportem w 5 dni roboczych.",
+        "43% brytyjskich firm doświadczyło w ciągu ostatnich 12 miesięcy naruszenia bezpieczeństwa lub cyberataku (dane NCSC / DSIT Cyber Security Breaches Survey). Fifth Ace pomaga małym i średnim firmom uzyskać certyfikat Cyber Essentials, prowadzi audyty bezpieczeństwa i testy penetracyjne — zdalnie, sprawnie, z raportem gotowym w 5 dni roboczych.",
       lead2:
         "Specjalizujemy się w cyberbezpieczeństwie dla firm z sektora prawnego, rachunkowego i e-commerce zatrudniających 10–100 osób.",
       lead3:
-        "Kompleksowe wsparcie: od analizy luk i testów penetracyjnych, przez wdrożenie polityk bezpieczeństwa, po szkolenia zespołu i monitoring.",
+        "Kompleksowe wsparcie: od analizy luk i testów penetracyjnych, przez wdrożenie polityk bezpieczeństwa, po szkolenia zespołu i monitoring. Dla firm z klientami lub działalnością w UE dodatkowo prowadzimy przegląd zgodności z dyrektywą NIS2.",
       ctaConsult: "Umów bezpłatną konsultację",
       ctaOffer: "Zobacz pakiety cenowe",
     },
@@ -40,7 +40,7 @@ const i18n = {
       title: "Kluczowe usługi",
       card1: {
         title: "Cyberbezpieczeństwo",
-        desc: "Audyty bezpieczeństwa, twarde polityki dostępu i monitoring zagrożeń dopasowany do Twojej infrastruktury.",
+        desc: "Przygotowanie do certyfikacji Cyber Essentials — pięciu kluczowych zabezpieczeń: firewalli, bezpiecznej konfiguracji, kontroli dostępu, ochrony przed malware i zarządzania aktualizacjami. W ramach usługi możemy też przeprowadzić przegląd zgodności z NIS2 dla firm z ekspozycją na UE.",
         li1: "Ocena ryzyka i zgodności",
         li2: "Wzmacnianie zabezpieczeń systemów i sieci",
         li3: "Programy świadomości bezpieczeństwa",
@@ -206,16 +206,17 @@ const i18n = {
         cta2: "Kup teraz online",
       },
       card2: {
-        name: "NIS2 Business Audit",
-        desc: "Dla firm 10–100 osób. Kompleksowy audyt zgodności z NIS2 i priorytetowy plan działania.",
+        name: "Cyber Essentials Audit",
+        desc: "Dla firm 10–100 osób. Przygotowanie do certyfikacji Cyber Essentials (Self-Assessment lub Plus) i priorytetowy plan działania.",
         period: "jednorazowo",
-        li1: "Pełna analiza luk zgodności NIS2",
+        li1: "Ocena gotowości do Cyber Essentials (Self-Assessment lub Plus)",
         li2: "Przegląd podatności sieci i systemów",
         li3: "Priorytetowy plan działań naprawczych (PDF)",
         li4: "Debriefing 60 min z rekomendacjami",
         li5: "30 dni wsparcia email po audycie",
         li6: "Retest po wdrożeniu poprawek",
-        cta: "Zamów audyt NIS2",
+        li7: "Dodatkowo: przegląd zgodności z NIS2 dla firm z ekspozycją na UE",
+        cta: "Zamów audyt Cyber Essentials",
         cta2: "Zapłać za audyt",
       },
       card3: {
@@ -257,14 +258,14 @@ const i18n = {
       contact: "Contact",
     },
     hero: {
-      eyebrow: "NIS2 Compliance • Security Audits • Pentesting for SMEs",
-      title: "Cybersecurity and NIS2 audit for businesses under 100 people",
+      eyebrow: "Cyber Essentials • Security Audits • Penetration Testing for SMEs",
+      title: "Cyber Essentials and security audits for businesses under 100 people",
       lead1:
-        "The NIS2 directive requires hundreds of thousands of EU and UK businesses to meet cybersecurity standards — or face fines and management liability. Fifth Ace delivers compliance audits, penetration tests, and implementation support for SMEs: remotely, efficiently, with a report in 5 working days.",
+        "43% of UK businesses experienced a cyber security breach or attack in the last 12 months (NCSC / DSIT Cyber Security Breaches Survey). Fifth Ace helps small and medium businesses achieve Cyber Essentials certification and delivers security audits and penetration testing — remotely, efficiently, with a report ready in 5 working days.",
       lead2:
         "We specialise in cybersecurity for law firms, accountancies, and e-commerce companies with 10–100 employees.",
       lead3:
-        "End-to-end support: from gap analysis and penetration testing to security policy implementation, team training, and ongoing monitoring.",
+        "End-to-end support: from gap analysis and penetration testing to security policy implementation, team training, and ongoing monitoring. For businesses with EU clients or operations, we also provide a NIS2 compliance review.",
       ctaConsult: "Book a free consultation",
       ctaOffer: "View pricing packages",
     },
@@ -272,7 +273,7 @@ const i18n = {
       title: "Core services",
       card1: {
         title: "Cybersecurity",
-        desc: "Security audits, strict access policies, and threat monitoring tailored to your infrastructure.",
+        desc: "Get ready for Cyber Essentials certification — the five core controls: firewalls, secure configuration, access control, malware protection, and patch management. We can also include a NIS2 compliance review for businesses with EU exposure.",
         li1: "Risk and compliance assessment",
         li2: "System and network hardening",
         li3: "Security awareness programs",
@@ -438,16 +439,17 @@ const i18n = {
         cta2: "Get Started",
       },
       card2: {
-        name: "NIS2 Business Audit",
-        desc: "For businesses with 10–100 employees. Full NIS2 compliance audit and priority action plan.",
+        name: "Cyber Essentials Audit",
+        desc: "For businesses with 10–100 employees. Cyber Essentials readiness (Self-Assessment or Plus) and a priority action plan.",
         period: "one-off",
-        li1: "Full NIS2 compliance gap analysis",
+        li1: "Cyber Essentials readiness assessment (Self-Assessment or Plus)",
         li2: "Network and system vulnerability review",
         li3: "Priority remediation action plan (PDF)",
         li4: "60-min debrief with recommendations",
         li5: "30-day post-audit email support",
         li6: "Re-test after remediation",
-        cta: "Order NIS2 audit",
+        li7: "Plus: NIS2 compliance review for businesses with EU exposure",
+        cta: "Order Cyber Essentials audit",
         cta2: "Get Started",
       },
       card3: {
