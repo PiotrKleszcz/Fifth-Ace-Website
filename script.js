@@ -11,9 +11,9 @@ let activeLanguage = "pl";
 const i18n = {
   pl: {
     meta: {
-      title: "Fifth Ace | Cyberbezpieczeństwo, Pentesty i Audyty",
+      title: "Fifth Ace | Cyber Essentials, audyty i pentesty dla MŚP w UK",
       description:
-        "Fifth Ace - cyberbezpieczeństwo, audyty bezpieczeństwa, testy penetracyjne oraz wsparcie IT dla małych firm i freelancerów.",
+        "Przygotowanie do Cyber Essentials, audyty bezpieczeństwa i testy penetracyjne dla firm 10–100 osób w UK. Zdalnie, raport w 5 dni roboczych.",
     },
     ui: {
       langLabel: "Wybór języka",
@@ -91,7 +91,7 @@ const i18n = {
       eyebrow: "Portfolio techniczne",
       title: "Dowód, nie tylko deklaracje",
       intro:
-        "Każda usługa, którą oferujemy, opiera się na praktycznym doświadczeniu — nie tylko na teorii. Poniżej znajdziesz wybrane laboratoria bezpieczeństwa, które dokumentujemy publicznie na GitHub: testy penetracyjne, wykrywanie zagrożeń i analizę podatności, z mapowaniem na wymogi NIS2.",
+        "Każda usługa, którą oferujemy, opiera się na praktycznym doświadczeniu — nie tylko na teorii. Poniżej znajdziesz wybrane laboratoria bezpieczeństwa, które dokumentujemy publicznie na GitHub: testy penetracyjne, wykrywanie zagrożeń i analizę podatności, z mapowaniem na uznawane standardy bezpieczeństwa (Cyber Essentials i NIS2).",
       card1: {
         title: "Wykrywanie ransomware w czasie rzeczywistym",
         desc: "Symulacja ataku ransomware na Windows 11 i jego wykrycie w czasie rzeczywistym metodami analizy entropii i integralności plików.",
@@ -104,7 +104,7 @@ const i18n = {
       },
       card3: {
         title: "Wdrożenie szyfrowania TLS od podstaw",
-        desc: "Budowa własnego CA, podpisanie certyfikatu serwera i konfiguracja HTTPS zgodna z wymogami NIS2.",
+        desc: "Budowa własnego CA, podpisanie certyfikatu serwera i konfiguracja HTTPS zgodna z dobrymi praktykami bezpieczeństwa.",
         cta: "Zobacz kod na GitHub",
       },
       ctaAll: "Zobacz pełne portfolio (20+ laboratoriów) →",
@@ -176,7 +176,7 @@ const i18n = {
       card1: {
         kicker: "Firmy 10–100 pracowników",
         title: "Małe i średnie przedsiębiorstwa",
-        desc: "Chcesz spełnić wymogi NIS2, uniknąć kar i mieć pewność, że Twoje systemy IT są bezpieczne — bez zatrudniania pełnoetatowego specjalisty ds. bezpieczeństwa.",
+        desc: "Chcesz mieć pewność, że Twoja firma spełnia uznawane w UK standardy bezpieczeństwa (Cyber Essentials), bez zatrudniania pełnoetatowego specjalisty ds. bezpieczeństwa — a jeśli masz klientów lub działalność w UE, dodatkowo pomożemy z NIS2.",
       },
       card2: {
         kicker: "Kancelarie i biura rachunkowe",
@@ -244,9 +244,9 @@ const i18n = {
   },
   en: {
     meta: {
-      title: "Fifth Ace | Cybersecurity, Pentesting and Security Audits",
+      title: "Fifth Ace | Cyber Essentials Readiness, Audits & Pentesting",
       description:
-        "Fifth Ace - cybersecurity, security audits, penetration testing and IT support for small businesses and freelancers.",
+        "Cyber Essentials readiness, security audits and penetration testing for UK businesses with 10–100 staff. Remote delivery, report in 5 working days.",
     },
     ui: {
       langLabel: "Language switch",
@@ -324,7 +324,7 @@ const i18n = {
       eyebrow: "Technical portfolio",
       title: "Proof, not just claims",
       intro:
-        "Every service we offer is grounded in hands-on experience, not just theory. Below are selected security labs we document publicly on GitHub — penetration testing, threat detection, and vulnerability analysis, mapped to NIS2 requirements.",
+        "Every service we offer is grounded in hands-on experience, not just theory. Below are selected security labs we document publicly on GitHub — penetration testing, threat detection, and vulnerability analysis, mapped to recognised security standards (Cyber Essentials and NIS2).",
       card1: {
         title: "Real-time ransomware detection",
         desc: "Simulated a ransomware attack on Windows 11 and detected it in real time using entropy analysis and file-integrity monitoring.",
@@ -337,7 +337,7 @@ const i18n = {
       },
       card3: {
         title: "TLS encryption built from scratch",
-        desc: "Built a custom CA, signed a server certificate, and configured HTTPS end to end in line with NIS2.",
+        desc: "Built a custom CA, signed a server certificate, and configured HTTPS end to end following security best practice.",
         cta: "View code on GitHub",
       },
       ctaAll: "See the full portfolio (20+ labs) →",
@@ -409,7 +409,7 @@ const i18n = {
       card1: {
         kicker: "10–100 employees",
         title: "Small and medium businesses",
-        desc: "You need to meet NIS2 requirements, avoid penalties, and be confident your IT systems are secure — without hiring a full-time security specialist.",
+        desc: "You need confidence that your business meets recognised UK security standards (Cyber Essentials), without hiring a full-time security specialist — and if you have EU clients or operations, we'll help with NIS2 too.",
       },
       card2: {
         kicker: "Law firms and accountancies",
