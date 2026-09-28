@@ -1025,6 +1025,15 @@ h1 {
   margin-top: 1px;
 }
 
+.pricing-disclaimer {
+  max-width: 720px;
+  margin: 24px auto 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
 /* ===== Lead Magnet ===== */
 .lead-magnet {
   border: 1px solid rgba(0, 216, 255, 0.3);

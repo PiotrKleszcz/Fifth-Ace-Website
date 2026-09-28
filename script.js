@@ -204,7 +204,7 @@ const i18n = {
         cta: "Zamów teraz",
       },
       card2: {
-        name: "Cyber Essentials Audit",
+        name: "Audyt gotowości do Cyber Essentials",
         desc: "Dla firm 10–100 osób. Przygotowanie do certyfikacji Cyber Essentials (Self-Assessment lub Plus) i priorytetowy plan działania.",
         period: "jednorazowo",
         li1: "Ocena gotowości do Cyber Essentials (Self-Assessment lub Plus)",
@@ -227,6 +227,7 @@ const i18n = {
         li5: "Aktualizacje polityk bezpieczeństwa",
         cta: "Zamów teraz",
       },
+      disclaimer: "Fifth Ace nie jest jednostką certyfikującą. Certyfikat Cyber Essentials wystawiają jednostki akredytowane przez IASME — my przygotowujemy Twoją firmę do certyfikacji.",
     },
     contact: {
       title: "Potrzebujesz partnera od bezpieczeństwa?",
@@ -433,7 +434,7 @@ const i18n = {
         cta: "Order now",
       },
       card2: {
-        name: "Cyber Essentials Audit",
+        name: "Cyber Essentials Readiness Audit",
         desc: "For businesses with 10–100 employees. Cyber Essentials readiness (Self-Assessment or Plus) and a priority action plan.",
         period: "one-off",
         li1: "Cyber Essentials readiness assessment (Self-Assessment or Plus)",
@@ -456,6 +457,7 @@ const i18n = {
         li5: "Security policy updates",
         cta: "Order now",
       },
+      disclaimer: "Fifth Ace is not a certification body. Cyber Essentials certification is issued by IASME-licensed Certification Bodies — we prepare your business for it.",
     },
     contact: {
       title: "Need a trusted security partner?",
