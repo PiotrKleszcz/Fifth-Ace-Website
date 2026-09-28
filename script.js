@@ -202,7 +202,6 @@ const i18n = {
         li3: "Przewodnik wdrożenia MFA i menedżera haseł",
         li4: "Pisemny raport bezpieczeństwa (PDF)",
         cta: "Zamów teraz",
-        cta2: "Kup teraz online",
       },
       card2: {
         name: "Cyber Essentials Audit",
@@ -215,8 +214,7 @@ const i18n = {
         li5: "30 dni wsparcia email po audycie",
         li6: "Retest po wdrożeniu poprawek",
         li7: "Dodatkowo: przegląd zgodności z NIS2 dla firm z ekspozycją na UE",
-        cta: "Zamów audyt Cyber Essentials",
-        cta2: "Zapłać za audyt",
+        cta: "Zamów teraz",
       },
       card3: {
         name: "vCISO Monthly",
@@ -227,8 +225,7 @@ const i18n = {
         li3: "Wsparcie reagowania na incydenty",
         li4: "Kwartalny test penetracyjny",
         li5: "Aktualizacje polityk bezpieczeństwa",
-        cta: "Zacznij współpracę",
-        cta2: "Subskrybuj online",
+        cta: "Zamów teraz",
       },
     },
     contact: {
@@ -434,7 +431,6 @@ const i18n = {
         li3: "MFA and password manager setup guide",
         li4: "Written security report (PDF)",
         cta: "Order now",
-        cta2: "Get Started",
       },
       card2: {
         name: "Cyber Essentials Audit",
@@ -447,8 +443,7 @@ const i18n = {
         li5: "30-day post-audit email support",
         li6: "Re-test after remediation",
         li7: "Plus: NIS2 compliance review for businesses with EU exposure",
-        cta: "Order Cyber Essentials audit",
-        cta2: "Get Started",
+        cta: "Order now",
       },
       card3: {
         name: "vCISO Monthly",
@@ -459,8 +454,7 @@ const i18n = {
         li3: "Incident response support",
         li4: "Quarterly penetration test",
         li5: "Security policy updates",
-        cta: "Start collaboration",
-        cta2: "Get Started",
+        cta: "Order now",
       },
     },
     contact: {
