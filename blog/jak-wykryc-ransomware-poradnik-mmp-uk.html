@@ -55,7 +55,7 @@
 
 <nav class="nav">
   <a href="https://fifthace.net">Fifth Ace</a>
-  <a href="https://fifthace.net/#kontakt" class="cta">Zamów audyt NIS2 →</a>
+  <a href="https://fifthace.net/#kontakt" class="cta">Zapytaj o przegląd NIS2 →</a>
 </nav>
 
 <article>
@@ -78,14 +78,14 @@
     <p>Zbudowaliśmy laboratorium testowe, żeby to sprawdzić, wykorzystując dokładnie te same techniki, na których opierałby się system monitorujący w środowisku produkcyjnym.</p>
 
     <div class="warning">
-      <strong>Ważne:</strong> Żadna strategia backupu nie zastąpi wczesnego wykrywania. Kopie zapasowe mówią Ci, jak odzyskać dane. Wykrywanie mówi Ci, <em>kiedy zatrzymać krwawienie</em> — często to różnica między utratą folderu a utratą całego serwera plików.
+      <strong>Ważne:</strong> Żadna strategia tworzenia kopii zapasowych nie zastąpi wczesnego wykrywania. Kopie zapasowe mówią Ci, jak odzyskać dane. Wykrywanie mówi Ci, <em>kiedy zatrzymać krwawienie</em> — często to różnica między utratą folderu a utratą całego serwera plików.
     </div>
 
     <h2>Dwa sygnały, które wykrywają ransomware wcześnie</h2>
 
     <p>Ransomware zachowuje się w przewidywalny sposób, a dwa sygnały pojawiają się na długo przed tym, zanim atakujący skończy robotę:</p>
 
-    <p><strong>1. Zmiany rozszerzeń plików.</strong> Ransomware zmienia nazwy plików w trakcie szyfrowania — <code>.txt</code> staje się <code>.locked</code>, <code>.docx</code> staje się <code>.encrypted</code> i tak dalej. Skrypt monitorujący nieoczekiwane zmiany rozszerzeń w systemie plików wychwytuje to w kilka sekund, bez potrzeby specjalistycznego threat intelligence.</p>
+    <p><strong>1. Zmiany rozszerzeń plików.</strong> Ransomware zmienia nazwy plików w trakcie szyfrowania — <code>.txt</code> staje się <code>.locked</code>, <code>.docx</code> staje się <code>.encrypted</code> i tak dalej. Skrypt monitorujący nieoczekiwane zmiany rozszerzeń w systemie plików wychwytuje to w kilka sekund, bez potrzeby specjalistycznych informacji o zagrożeniach.</p>
 
     <p><strong>2. Entropia Shannona.</strong> Zaszyfrowane dane wyglądają statystycznie inaczej niż dane normalne — są bardziej "losowe" na poziomie bajtów. Mierzy się to za pomocą entropii Shannona — sposobu oceny, jak nieprzewidywalna jest zawartość pliku. Zwykły tekst i dokumenty biurowe mieszczą się w niskim do umiarkowanego zakresie. Zaszyfrowane pliki skaczą w kierunku maksimum. Detektor liczący entropię plików może wykryć trwające szyfrowanie, nawet zanim pliki zostaną przemianowane.</p>
 
@@ -102,7 +102,7 @@
           <tr><td>Dotknięte pliki</td><td>9</td></tr>
           <tr><td>Wykryte podejrzane rozszerzenia</td><td>8</td></tr>
           <tr><td>Werdykt</td><td><strong>CRITICAL — wykryto wskaźniki ransomware</strong></td></tr>
-          <tr><td>Zalecana reakcja</td><td>Izolacja systemu, zabezpieczenie obrazu dysku, sprawdzenie backupów, zgłoszenie incydentu</td></tr>
+          <tr><td>Zalecana reakcja</td><td>Izolacja systemu, zabezpieczenie obrazu dysku, sprawdzenie kopii zapasowych, zgłoszenie incydentu</td></tr>
         </tbody>
       </table>
     </div>
@@ -120,13 +120,13 @@
 
     <h2>Co to oznacza dla Twojej firmy</h2>
 
-    <p>Większość MŚP, z którymi rozmawiamy, ma kopie zapasowe. Niewiele z nich ma cokolwiek aktywnie monitorującego wczesne oznaki ransomware — zmiany nazw plików, skoki entropii przypominające szyfrowanie, nietypowe wzorce dostępu. Ta luka to dokładnie to, co ma domykać dobrze przeprowadzony przegląd bezpieczeństwa: nie tylko "czy masz backupy", ale "czy wiedziałbyś w ciągu kilku minut, gdyby coś zaczęło teraz szyfrować Twoje pliki".</p>
+    <p>Większość MŚP, z którymi rozmawiamy, ma kopie zapasowe. Niewiele z nich ma cokolwiek aktywnie monitorującego wczesne oznaki ransomware — zmiany nazw plików, skoki entropii przypominające szyfrowanie, nietypowe wzorce dostępu. Ta luka to dokładnie to, co ma domykać dobrze przeprowadzony przegląd bezpieczeństwa: nie tylko "czy masz kopie zapasowe", ale "czy wiedziałbyś w ciągu kilku minut, gdyby coś zaczęło teraz szyfrować Twoje pliki".</p>
 
     <p>Jeśli odpowiedź brzmi nie, to luka warta zamknięcia, zanim stanie się zgłoszeniem incydentu.</p>
 
     <div class="cta-box">
       <h2>Gotowy sprawdzić, na czym stoisz?</h2>
-      <p>Nasz audyt gotowości do Cyber Essentials daje Ci pełny obraz Twojej gotowości na zgodność — łącznie z gotowością do wykrywania i reagowania na incydenty — wraz z jasnym planem naprawy braków. Stała cena. Bez niespodzianek.</p>
+      <p>Audyt gotowości do podstawowego Cyber Essentials kosztuje £799 i obejmuje ocenę pięciu zabezpieczeń programu oraz priorytetowy plan działań naprawczych. Przygotowanie do Cyber Essentials Plus: osobna wycena po ustaleniu zakresu. Przegląd NIS2 jest odrębną, osobno wycenianą usługą i nie wchodzi w cenę £799. Ocena gotowości do Cyber Essentials nie stanowi pełnej oceny zgodności z NIS2.</p>
       <a href="https://fifthace.net/#kontakt">Zamów audyt gotowości do Cyber Essentials →</a>
     </div>
 

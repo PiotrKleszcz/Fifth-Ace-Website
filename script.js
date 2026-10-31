@@ -11,7 +11,7 @@ let activeLanguage = "pl";
 const i18n = {
   pl: {
     meta: {
-      title: "Fifth Ace | Cyber Essentials, audyty i pentesty dla MŚP w UK",
+      title: "Fifth Ace | Cyber Essentials, audyty i testy penetracyjne dla MŚP w UK",
       description:
         "Przygotowanie do Cyber Essentials, audyty bezpieczeństwa i testy penetracyjne dla firm 10–100 osób w UK. Zdalnie, raport w 5 dni roboczych.",
     },
@@ -25,14 +25,14 @@ const i18n = {
       contact: "Kontakt",
     },
     hero: {
-      eyebrow: "Cyber Essentials • Audyt bezpieczeństwa • Pentesty dla MŚP",
+      eyebrow: "Cyber Essentials • Audyt bezpieczeństwa • Testy penetracyjne dla MŚP",
       title: "Cyber Essentials i audyt bezpieczeństwa dla firm do 100 osób",
       lead1:
         "43% brytyjskich firm doświadczyło w ciągu ostatnich 12 miesięcy naruszenia bezpieczeństwa lub cyberataku (dane NCSC / DSIT Cyber Security Breaches Survey). Fifth Ace pomaga małym i średnim firmom uzyskać certyfikat Cyber Essentials, prowadzi audyty bezpieczeństwa i testy penetracyjne — zdalnie, sprawnie, z raportem gotowym w 5 dni roboczych.",
       lead2:
         "Specjalizujemy się w cyberbezpieczeństwie dla firm z sektora prawnego, rachunkowego i e-commerce zatrudniających 10–100 osób.",
       lead3:
-        "Kompleksowe wsparcie: od analizy luk i testów penetracyjnych, przez wdrożenie polityk bezpieczeństwa, po szkolenia zespołu i monitoring. Dla firm z klientami lub działalnością w UE dodatkowo prowadzimy przegląd zgodności z dyrektywą NIS2.",
+        "Kompleksowe wsparcie: od analizy luk i testów penetracyjnych, przez wdrożenie polityk bezpieczeństwa, po szkolenia zespołu i monitoring. Dla firm z klientami lub działalnością w UE dodatkowo prowadzimy odrębny, osobno wyceniany przegląd NIS2.",
       ctaConsult: "Umów bezpłatną konsultację",
       ctaOffer: "Zobacz pakiety cenowe",
     },
@@ -40,7 +40,7 @@ const i18n = {
       title: "Kluczowe usługi",
       card1: {
         title: "Cyberbezpieczeństwo",
-        desc: "Przygotowanie do certyfikacji Cyber Essentials — pięciu kluczowych zabezpieczeń: firewalli, bezpiecznej konfiguracji, kontroli dostępu, ochrony przed malware i zarządzania aktualizacjami. W ramach usługi możemy też przeprowadzić przegląd zgodności z NIS2 dla firm z ekspozycją na UE.",
+        desc: "Audyt gotowości do podstawowego Cyber Essentials kosztuje £799 i obejmuje ocenę pięciu zabezpieczeń: zapór sieciowych, bezpiecznej konfiguracji, kontroli dostępu użytkowników, ochrony przed złośliwym oprogramowaniem i zarządzania aktualizacjami bezpieczeństwa. Obejmuje również priorytetowy plan działań naprawczych. Przygotowanie do Cyber Essentials Plus: osobna wycena po ustaleniu zakresu. Przegląd NIS2 jest odrębną, osobno wycenianą usługą i nie wchodzi w cenę £799. Ocena gotowości do Cyber Essentials nie stanowi pełnej oceny zgodności z NIS2.",
         li1: "Ocena ryzyka i zgodności",
         li2: "Wzmacnianie zabezpieczeń systemów i sieci",
         li3: "Programy świadomości bezpieczeństwa",
@@ -49,9 +49,9 @@ const i18n = {
       card2: {
         title: "Testy penetracyjne",
         desc: "Realistyczne symulacje ataków na aplikacje, sieci i środowiska chmurowe, zakończone raportem i planem naprawczym.",
-        li1: "Pentesty aplikacji webowych, API i mobilnych",
+        li1: "Testy penetracyjne aplikacji internetowych, API i aplikacji mobilnych",
         li2: "Testy infrastruktury wewnętrznej i zewnętrznej",
-        li3: "Retesty po wdrożeniu poprawek",
+        li3: "Ponowne testy po wdrożeniu poprawek",
         cta: "Zobacz stronę usługi",
       },
       now: {
@@ -64,11 +64,11 @@ const i18n = {
           li3: "Zapora, aktualizacje i podstawowy audyt bezpieczeństwa",
         },
         card2: {
-          title: "Pakiet cyber hygiene dla małych firm",
+          title: "Pakiet cyberhigieny dla małych firm",
           desc: "Praktyczne wdrożenie nawyków bezpieczeństwa dla małych zespołów.",
           li1: "MFA i menedżer haseł",
           li2: "Bezpieczne kopie zapasowe",
-          li3: "Świadomość phishingu",
+          li3: "Rozpoznawanie prób wyłudzenia danych i oszustw",
         },
         card3: {
           title: "Przegląd bezpieczeństwa sieci domowej",
@@ -111,17 +111,17 @@ const i18n = {
     },
     leadMagnet: {
       title: "Sprawdź, gdzie stoisz — za darmo",
-      desc: "5-minutowa samoocena NIS2 dla MŚP — 12 pytań, natychmiastowy wynik i checklista PDF na e-mail.",
-      cta: "Pobierz darmową checklistę NIS2",
+      desc: "5-minutowa samoocena NIS2 dla MŚP — 12 pytań, natychmiastowy wynik i lista kontrolna w PDF przesyłana e-mailem.",
+      cta: "Pobierz darmową listę kontrolną NIS2",
     },
     seoHub: {
       title: "Strefa usług i porad bezpieczeństwa",
       intro:
-        "Przygotowaliśmy osobne strony usług, żeby łatwiej było znaleźć Fifth Ace po konkretnych hasłach takich jak audyt bezpieczeństwa, pentesty, wsparcie IT czy zabezpieczenie laptopa firmowego.",
+        "Przygotowaliśmy osobne strony usług, żeby łatwiej było znaleźć Fifth Ace po konkretnych hasłach takich jak audyt bezpieczeństwa, testy penetracyjne, wsparcie IT czy zabezpieczenie laptopa firmowego.",
       card1: {
         kicker: "Cyberbezpieczeństwo",
         title: "Cyberbezpieczeństwo dla małych firm",
-        desc: "Strona o ochronie kont, poczty, laptopów, backupów i podstawowych procedurach bezpieczeństwa.",
+        desc: "Strona o ochronie kont, poczty, laptopów, kopii zapasowych i podstawowych procedurach bezpieczeństwa.",
         cta: "Przejdź do strony",
       },
       card2: {
@@ -131,21 +131,21 @@ const i18n = {
         cta: "Przejdź do strony",
       },
       card3: {
-        kicker: "Pentesty",
+        kicker: "Testy penetracyjne",
         title: "Testy penetracyjne aplikacji i sieci",
-        desc: "Informacje o testach aplikacji webowych, API, sieci wewnętrznej i retestach po poprawkach.",
+        desc: "Informacje o testach aplikacji internetowych, API, sieci wewnętrznej i ponownych testach po poprawkach.",
         cta: "Przejdź do strony",
       },
       card4: {
         kicker: "Wsparcie IT",
         title: "Wsparcie IT dla firm i zespołów",
-        desc: "Administracja, helpdesk, utrzymanie stacji roboczych, kopie zapasowe i ciągłość działania.",
+        desc: "Administracja, pomoc techniczna, utrzymanie stacji roboczych, kopie zapasowe i ciągłość działania.",
         cta: "Przejdź do strony",
       },
       card5: {
         kicker: "Laptop i Wi-Fi",
         title: "Zabezpieczenie laptopa i sieci Wi-Fi",
-        desc: "Hardening Windows, router, MFA, Defender i szybki security check dla małego biznesu lub domu.",
+        desc: "Wzmocnienie zabezpieczeń Windows, router, MFA, Defender i szybki przegląd bezpieczeństwa dla małego biznesu lub domu.",
         cta: "Przejdź do strony",
       },
     },
@@ -163,11 +163,11 @@ const i18n = {
       },
       q3: {
         title: "Czy Fifth Ace pomaga zabezpieczyć Windows, router i domowe Wi-Fi?",
-        desc: "Tak. Fifth Ace oferuje hardening Windows 10 i 11, przegląd konfiguracji routera, ustawienia Microsoft Defender, podstawowy firewall review oraz pomoc w budowaniu bezpiecznych kopii zapasowych.",
+        desc: "Tak. Fifth Ace oferuje wzmocnienie zabezpieczeń Windows 10 i 11, przegląd konfiguracji routera, ustawienia Microsoft Defender, podstawowy przegląd zapory sieciowej oraz pomoc w budowaniu bezpiecznych kopii zapasowych.",
       },
       q4: {
         title: "Jakie usługi cyberbezpieczeństwa są dostępne od ręki?",
-        desc: "Najszybciej można rozpocząć security check dla laptopa firmowego, przegląd bezpieczeństwa sieci domowej, cyber hygiene setup dla małego zespołu oraz podstawowy audyt zabezpieczeń.",
+        desc: "Najszybciej można rozpocząć przegląd bezpieczeństwa dla laptopa firmowego, przegląd bezpieczeństwa sieci domowej, wdrożenie podstawowych zasad cyberhigieny dla małego zespołu oraz podstawowy audyt zabezpieczeń.",
       },
     },
     forWhom: {
@@ -176,7 +176,7 @@ const i18n = {
       card1: {
         kicker: "Firmy 10–100 pracowników",
         title: "Małe i średnie przedsiębiorstwa",
-        desc: "Chcesz mieć pewność, że Twoja firma spełnia uznawane w UK standardy bezpieczeństwa (Cyber Essentials), bez zatrudniania pełnoetatowego specjalisty ds. bezpieczeństwa — a jeśli masz klientów lub działalność w UE, dodatkowo pomożemy z NIS2.",
+        desc: "Chcesz mieć pewność, że Twoja firma spełnia uznawane w UK standardy bezpieczeństwa (Cyber Essentials), bez zatrudniania pełnoetatowego specjalisty ds. bezpieczeństwa — a jeśli masz klientów lub działalność w UE, oferujemy odrębny, osobno wyceniany przegląd NIS2.",
       },
       card2: {
         kicker: "Kancelarie i biura rachunkowe",
@@ -194,30 +194,30 @@ const i18n = {
       title: "Przejrzyste ceny, konkretne efekty",
       intro: "Wszystkie usługi realizowane zdalnie. Ceny w funtach brytyjskich (GBP). Bez ukrytych kosztów.",
       card1: {
-        name: "Security Starter",
+        name: "Pakiet bezpieczeństwa na start",
         desc: "Dla freelancerów i firm 1–10 osób. Szybki przegląd i podstawowe utwardzenie bezpieczeństwa.",
         period: "jednorazowo",
         li1: "Audyt bezpieczeństwa laptopa i sieci Wi-Fi",
-        li2: "Hardening Windows 10/11",
+        li2: "Wzmocnienie zabezpieczeń Windows 10/11",
         li3: "Przewodnik wdrożenia MFA i menedżera haseł",
         li4: "Pisemny raport bezpieczeństwa (PDF)",
         cta: "Zamów teraz",
       },
       card2: {
-        name: "Audyt gotowości do Cyber Essentials",
-        desc: "Dla firm 10–100 osób. Przygotowanie do certyfikacji Cyber Essentials (Self-Assessment lub Plus) i priorytetowy plan działania.",
+        name: "Audyt Cyber Essentials",
+        desc: "Dla firm 10–100 osób. Ocena gotowości do podstawowego Cyber Essentials i priorytetowy plan działań naprawczych.",
         period: "jednorazowo",
-        li1: "Ocena gotowości do Cyber Essentials (Self-Assessment lub Plus)",
+        li1: "Ocena gotowości w zakresie pięciu zabezpieczeń podstawowego Cyber Essentials",
         li2: "Przegląd podatności sieci i systemów",
         li3: "Priorytetowy plan działań naprawczych (PDF)",
-        li4: "Debriefing 60 min z rekomendacjami",
-        li5: "30 dni wsparcia email po audycie",
-        li6: "Retest po wdrożeniu poprawek",
-        li7: "Dodatkowo: przegląd zgodności z NIS2 dla firm z ekspozycją na UE",
+        li4: "60-minutowe omówienie wyników i rekomendacji",
+        li5: "30 dni wsparcia e-mail po audycie",
+        li6: "Ponowny test po wdrożeniu poprawek",
+        li7: "Przygotowanie do Cyber Essentials Plus: osobna wycena po ustaleniu zakresu. Przegląd NIS2 jest odrębną, osobno wycenianą usługą i nie wchodzi w cenę £799.",
         cta: "Zamów teraz",
       },
       card3: {
-        name: "vCISO Monthly",
+        name: "Stałe wsparcie vCISO",
         desc: "Wirtualny CISO dla firm potrzebujących stałego wsparcia bezpieczeństwa i zgodności.",
         period: "miesięcznie",
         li1: "Miesięczny przegląd bezpieczeństwa",
@@ -227,7 +227,7 @@ const i18n = {
         li5: "Aktualizacje polityk bezpieczeństwa",
         cta: "Zamów teraz",
       },
-      disclaimer: "Fifth Ace nie jest jednostką certyfikującą. Certyfikat Cyber Essentials wystawiają jednostki akredytowane przez IASME — my przygotowujemy Twoją firmę do certyfikacji.",
+      disclaimer: "Fifth Ace nie jest jednostką certyfikującą i nie wydaje certyfikatów Cyber Essentials. Certyfikację prowadzą jednostki certyfikujące licencjonowane przez IASME — Fifth Ace przygotowuje Twoją firmę do certyfikacji.",
     },
     contact: {
       title: "Potrzebujesz partnera od bezpieczeństwa?",
@@ -262,7 +262,7 @@ const i18n = {
       lead2:
         "We specialise in cybersecurity for law firms, accountancies, and e-commerce companies with 10–100 employees.",
       lead3:
-        "End-to-end support: from gap analysis and penetration testing to security policy implementation, team training, and ongoing monitoring. For businesses with EU clients or operations, we also provide a NIS2 compliance review.",
+        "End-to-end support: from gap analysis and penetration testing to security policy implementation, team training, and ongoing monitoring. For businesses with EU clients or operations, we also offer a separate, separately priced NIS2 review.",
       ctaConsult: "Book a free consultation",
       ctaOffer: "View pricing packages",
     },
@@ -270,7 +270,7 @@ const i18n = {
       title: "Core services",
       card1: {
         title: "Cybersecurity",
-        desc: "Get ready for Cyber Essentials certification — the five core controls: firewalls, secure configuration, access control, malware protection, and patch management. We can also include a NIS2 compliance review for businesses with EU exposure.",
+        desc: "The readiness audit for basic Cyber Essentials costs £799 and assesses five controls: firewalls, secure configuration, user access control, malware protection, and security update management. It also includes a prioritised remediation action plan. Preparation for Cyber Essentials Plus is priced separately after the scope is agreed. The NIS2 review is a separate, separately priced service and is not included in the £799 fee. A Cyber Essentials readiness assessment is not a full NIS2 compliance assessment.",
         li1: "Risk and compliance assessment",
         li2: "System and network hardening",
         li3: "Security awareness programs",
@@ -406,7 +406,7 @@ const i18n = {
       card1: {
         kicker: "10–100 employees",
         title: "Small and medium businesses",
-        desc: "You need confidence that your business meets recognised UK security standards (Cyber Essentials), without hiring a full-time security specialist — and if you have EU clients or operations, we'll help with NIS2 too.",
+        desc: "You need confidence that your business meets recognised UK security standards (Cyber Essentials), without hiring a full-time security specialist — and if you have EU clients or operations, we offer a separate, separately priced NIS2 review.",
       },
       card2: {
         kicker: "Law firms and accountancies",
@@ -435,15 +435,15 @@ const i18n = {
       },
       card2: {
         name: "Cyber Essentials Readiness Audit",
-        desc: "For businesses with 10–100 employees. Cyber Essentials readiness (Self-Assessment or Plus) and a priority action plan.",
+        desc: "For businesses with 10–100 employees. Basic Cyber Essentials readiness assessment and a prioritised remediation action plan.",
         period: "one-off",
-        li1: "Cyber Essentials readiness assessment (Self-Assessment or Plus)",
+        li1: "Readiness assessment covering the five controls of basic Cyber Essentials",
         li2: "Network and system vulnerability review",
         li3: "Priority remediation action plan (PDF)",
         li4: "60-min debrief with recommendations",
         li5: "30-day post-audit email support",
         li6: "Re-test after remediation",
-        li7: "Plus: NIS2 compliance review for businesses with EU exposure",
+        li7: "Preparation for Cyber Essentials Plus is priced separately after the scope is agreed. The NIS2 review is a separate, separately priced service and is not included in the £799 fee.",
         cta: "Order now",
       },
       card3: {
@@ -457,7 +457,7 @@ const i18n = {
         li5: "Security policy updates",
         cta: "Order now",
       },
-      disclaimer: "Fifth Ace is not a certification body. Cyber Essentials certification is issued by IASME-licensed Certification Bodies — we prepare your business for it.",
+      disclaimer: "Fifth Ace is not a certification body and does not issue Cyber Essentials certificates. Certification is carried out by IASME-licensed Certification Bodies — Fifth Ace prepares your business for certification.",
     },
     contact: {
       title: "Need a trusted security partner?",
