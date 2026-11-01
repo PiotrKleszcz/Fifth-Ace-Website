@@ -773,6 +773,29 @@ h1 {
   color: var(--muted);
 }
 
+.contact-form {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border: 0;
+  border-radius: 12px;
+  background: #fff;
+  color-scheme: light;
+}
+
+.contact-email a {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.contact-email a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
 .footer {
   padding: 22px 0 30px;
   display: flex;
