@@ -552,6 +552,7 @@ function applyLanguage(language) {
     button.setAttribute("aria-pressed", String(isActive));
   });
 
+  document.dispatchEvent(new CustomEvent("fifthace:language", { detail: selectedLanguage }));
   setStoredString(STORAGE_KEYS.language, selectedLanguage);
 }
 
