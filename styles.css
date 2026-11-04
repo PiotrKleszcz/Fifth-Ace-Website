@@ -315,9 +315,12 @@ h1 {
   font-size: 1.08rem;
 }
 
-.lead-accent,
-.section-intro {
+.lead-accent {
   color: #c7d9f4;
+}
+
+.section-intro {
+  color: var(--text);
 }
 
 .section-intro--muted {
@@ -1431,5 +1434,15 @@ body,
   .footer {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+#start > .section[id] {
+  scroll-margin-top: 112px;
+}
+
+@media (max-width: 760px) {
+  #start > .section[id] {
+    scroll-margin-top: 200px;
   }
 }

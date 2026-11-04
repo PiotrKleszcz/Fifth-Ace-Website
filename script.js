@@ -25,7 +25,6 @@ const i18n = {
       contact: "Kontakt",
     },
     hero: {
-      eyebrow: "Cyber Essentials • Audyt bezpieczeństwa • Testy penetracyjne dla MŚP",
       title: "Cyber Essentials i audyt bezpieczeństwa dla firm do 100 osób",
       lead1:
         "43% brytyjskich firm doświadczyło w ciągu ostatnich 12 miesięcy naruszenia bezpieczeństwa lub cyberataku (dane NCSC / DSIT Cyber Security Breaches Survey). Fifth Ace pomaga małym i średnim firmom uzyskać certyfikat Cyber Essentials, prowadzi audyty bezpieczeństwa i testy penetracyjne — zdalnie, sprawnie, z raportem gotowym w 5 dni roboczych.",
@@ -88,7 +87,6 @@ const i18n = {
       },
     },
     portfolio: {
-      eyebrow: "Portfolio techniczne",
       title: "Dowód, nie tylko deklaracje",
       intro:
         "Każda usługa, którą oferujemy, opiera się na praktycznym doświadczeniu — nie tylko na teorii. Poniżej znajdziesz wybrane laboratoria bezpieczeństwa, które dokumentujemy publicznie na GitHub: testy penetracyjne, wykrywanie zagrożeń i analizę podatności, z mapowaniem na uznawane standardy bezpieczeństwa (Cyber Essentials i NIS2).",
@@ -171,7 +169,6 @@ const i18n = {
       },
     },
     forWhom: {
-      eyebrow: "Dla kogo",
       title: "Dopasowane do Twojego biznesu",
       card1: {
         kicker: "Firmy 10–100 pracowników",
@@ -190,7 +187,6 @@ const i18n = {
       },
     },
     pricing: {
-      eyebrow: "Pakiety cenowe",
       title: "Przejrzyste ceny, konkretne efekty",
       intro: "Wszystkie usługi realizowane zdalnie. Ceny w funtach brytyjskich (GBP). Bez ukrytych kosztów.",
       card1: {
@@ -255,7 +251,6 @@ const i18n = {
       contact: "Contact",
     },
     hero: {
-      eyebrow: "Cyber Essentials • Security Audits • Penetration Testing for SMEs",
       title: "Cyber Essentials and security audits for businesses under 100 people",
       lead1:
         "43% of UK businesses experienced a cyber security breach or attack in the last 12 months (NCSC / DSIT Cyber Security Breaches Survey). Fifth Ace helps small and medium businesses achieve Cyber Essentials certification and delivers security audits and penetration testing — remotely, efficiently, with a report ready in 5 working days.",
@@ -318,7 +313,6 @@ const i18n = {
       },
     },
     portfolio: {
-      eyebrow: "Technical portfolio",
       title: "Proof, not just claims",
       intro:
         "Every service we offer is grounded in hands-on experience, not just theory. Below are selected security labs we document publicly on GitHub — penetration testing, threat detection, and vulnerability analysis, mapped to recognised security standards (Cyber Essentials and NIS2).",
@@ -401,7 +395,6 @@ const i18n = {
       },
     },
     forWhom: {
-      eyebrow: "Who is this for",
       title: "Tailored to your business",
       card1: {
         kicker: "10–100 employees",
@@ -420,7 +413,6 @@ const i18n = {
       },
     },
     pricing: {
-      eyebrow: "Pricing",
       title: "Transparent pricing, clear outcomes",
       intro: "All services delivered remotely. Prices in British Pounds (GBP). No hidden costs.",
       card1: {
